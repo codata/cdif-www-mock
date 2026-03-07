@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | default("CDIF - Cross-Domain Interoperability Framework") }}</title>
+    <meta name="description" content="A 'lingua franca' for FAIR implementation across domain boundaries.">
+    
+    <!-- Open Graph & Twitter Meta Tags for Reviewer Link Sharing -->
+    <meta property="og:title" content="CDIF - Cross-Domain Interoperability Framework">
+    <meta property="og:description" content="A 'lingua franca' for FAIR implementation across domain boundaries. Prototype staging site.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdif.codata.org/assets/images/cdif+480-transparent.png">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    
+    <!-- Custom Tailwind Styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body x-data="{ theme: 'minimalist-light', heroBg: 'orbs', menuOpen: false }" :data-theme="theme" class="antialiased min-h-screen flex flex-col transition-colors duration-300">
+    
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 w-full glass shadow-sm transition-all duration-300">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Logo -->
+                <div class="flex-shrink-0 group">
+                    <a href="/" class="flex items-center gap-3">
+                        <!-- Use a standard image, relying on CSS for visual pop -->
+                        <img class="h-10 w-auto transition-transform duration-300 group-hover:scale-105" src="/assets/images/cdif+300-transparent.png" alt="CODATA CDIF Logo">
+                    </a>
+                </div>
+                
+                <!-- Desktop nav -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        {% for section in collections.sections %}
+                            {% if section.data.title and section.data.order > 1 %}
+                            <a href="#section-{{ section.data.order }}" class="hover:text-theme-accent transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">
+                                {{ section.data.title }}
+                            </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Theme & Background Switchers -->
+                <div class="hidden md:flex items-center gap-5 border-l border-theme-text/10 pl-6 ml-2">
+                    
+                    <!-- Background Switcher Dropdown -->
+                    <div class="relative inline-block text-left" x-data="{ open: false }">
+                        <div>
+                            <button @click="open = !open" type="button" class="inline-flex w-full items-center justify-center text-xs font-semibold tracking-wide text-theme-muted hover:text-theme-text transition-colors focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                                <svg class="w-4 h-4 mr-1.5 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                <span class="capitalize hidden lg:inline-block" x-text="(heroBg.replace('-', ' ') + ' BG')"></span>
+                            </button>
+                        </div>
+                        <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" class="absolute right-0 z-10 mt-3 w-48 origin-top-right rounded-md bg-theme-surface shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu">
+                            <div class="py-1" role="none">
+                                <button @click="heroBg = 'orbs'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Orbs (Default)</button>
+                                <button @click="heroBg = 'particles'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Particles Grid</button>
+                                <button @click="heroBg = 'cyber-grid'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Cyber Grid 3D</button>
+                                <button @click="heroBg = 'abstract-rings'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Abstract Rings</button>
+                                <button @click="heroBg = 'minimal'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Minimal Glow</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Theme Switcher Dropdown -->
+                    <div class="relative inline-block text-left" x-data="{ open: false }">
+                        <div>
+                            <button @click="open = !open" type="button" class="inline-flex w-full items-center justify-center text-xs font-semibold tracking-wide text-theme-muted hover:text-theme-text transition-colors focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                                <svg class="w-4 h-4 mr-1.5 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                                <span class="capitalize hidden lg:inline-block" x-text="theme.replace('-', ' ')"></span>
+                            </button>
+                        </div>
+
+                        <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-10 mt-3 w-56 origin-top-right rounded-md bg-theme-surface shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+
+                            <div class="py-1" role="none">
+                                <!-- Core Themes -->
+                                <button @click="theme = 'minimalist-light'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Minimalist (Light)</button>
+                                <button @click="theme = 'minimalist-dark'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Minimalist (Dark)</button>
+                                <button @click="theme = 'professional'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Professional (Classic)</button>
+                                <button @click="theme = 'professional-dark'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Professional (Dark)</button>
+                                <button @click="theme = 'tech-forward'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Tech-Forward</button>
+                                
+                                <div class="border-t border-theme-text/10 my-1"></div>
+                                
+                                <!-- Creative Extensions -->
+                                <button @click="theme = 'academic'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Academic / Scholarly</button>
+                                <button @click="theme = 'global-network'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white" role="menuitem">Global Network</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button @click="menuOpen = !menuOpen" type="button" class="inline-flex items-center justify-center rounded-md p-2 hover:bg-theme-surface hover:text-theme-accent focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" x-show="!menuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <svg class="h-6 w-6" x-show="menuOpen" style="display: none;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu panel -->
+        <div x-show="menuOpen" class="md:hidden glass border-t border-gray-200">
+            <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                 {% for section in collections.sections %}
+                    {% if section.data.title and section.data.order > 1 %}
+                    <a href="#section-{{ section.data.order }}" @click="menuOpen = false" class="block rounded-md px-3 py-2 text-base font-medium hover:bg-theme-accent hover:text-white">{{ section.data.title }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        {{ content | safe }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-theme-surface py-12 border-t border-theme-accent/10 mt-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <img class="h-12 w-auto mb-6 opacity-90 hover:opacity-100 transition-opacity" src="/assets/images/cdif+300-transparent.png" alt="CDIF Logo">
+                    <p class="text-sm text-theme-muted max-w-sm leading-relaxed mb-4">The Cross-Domain Interoperability Framework (CDIF) is a set of practical, implementation-level guidelines designed to improve data management practices and unlock cross-domain data reuse.</p>
+                    <p class="text-sm font-semibold text-theme-text opacity-90">A <a href="https://codata.org" target="_blank" class="text-theme-accent hover:underline underline-offset-4 pointer-events-auto">CODATA</a> Supported Initiative.</p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Resources</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="https://book.cdif.org" class="text-sm text-theme-muted hover:text-theme-accent">The CDIF Book</a></li>
+                        <li><a href="https://doi.org/10.5281/zenodo.11236871" class="text-sm text-theme-muted hover:text-theme-accent">The Project Report</a></li>
+                        <li><a href="https://github.com/Cross-Domain-Interoperability-Framework" class="text-sm text-theme-muted hover:text-theme-accent">GitHub Org</a></li>
+                        <li><a href="https://codata.org" target="_blank" class="text-sm text-theme-muted hover:text-theme-accent font-semibold">CODATA Organization</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider">Legal</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="/privacy/" class="text-sm text-theme-muted hover:text-theme-accent">Privacy Policy</a></li>
+                        <li><a href="/terms/" class="text-sm text-theme-muted hover:text-theme-accent">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-theme-text/10 pt-8 flex justify-between items-center">
+                <p class="text-sm text-theme-muted">&copy; 2026 <a href="https://codata.org" target="_blank" class="hover:text-theme-accent transition-colors">CODATA</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Floating Reviewer Feedback Button -->
+    <a href="https://github.com/codata/cdif-www-mock/issues" target="_blank" class="fixed bottom-6 right-6 z-50 group flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-theme-surface/70 backdrop-blur-xl border border-theme-accent/20 text-sm font-semibold text-theme-text shadow-xl hover:shadow-theme-accent/20 hover:bg-theme-accent hover:text-white hover:border-theme-accent transition-all duration-300 transform hover:-translate-y-1">
+        <span class="relative flex h-2 w-2 mr-1">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-theme-accent opacity-75 group-hover:bg-white drop-shadow-md"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-theme-accent group-hover:bg-white"></span>
+        </span>
+        Reviewer Feedback
+        <svg class="w-4 h-4 ml-1 opacity-70 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+    </a>
+
+</body>
+</html>

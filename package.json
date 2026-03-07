@@ -1,0 +1,26 @@
+{
+  "name": "cdif-www",
+  "version": "1.0.0",
+  "description": "CODATA Cross-Domain Information Framework Website",
+  "scripts": {
+    "start": "npm-run-all -p dev:*",
+    "dev:11ty": "eleventy --serve --watch",
+    "dev:tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./_site/assets/css/style.css --watch",
+    "build": "npm-run-all -s build:*",
+    "build:eleventy": "eleventy",
+    "build:tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./_site/assets/css/style.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/cli": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "alpinejs": "^3.14.8",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.0.0"
+  }
+}
