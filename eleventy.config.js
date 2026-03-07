@@ -1,5 +1,10 @@
+const { HtmlBasePlugin } = require("@11ty/eleventy");
+
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
+    // Automatically transpile and correctly prefix all absolute URLs to map cleanly to gh-pages subdirectories
+    eleventyConfig.addPlugin(HtmlBasePlugin);
+
     // Passthrough copy for images and static assets
     eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
 
@@ -13,6 +18,7 @@ module.exports = function (eleventyConfig) {
     });
 
     return {
+        pathPrefix: "/cdif-www-mock/",
         dir: {
             input: ".", // Top level is input because content is at /content
             includes: "src/_includes",
