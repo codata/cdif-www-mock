@@ -1,9 +1,21 @@
 const { HtmlBasePlugin } = require("@11ty/eleventy");
+const markdownItLinkAttributes = require("markdown-it-link-attributes");
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
     // Automatically transpile and correctly prefix all absolute URLs to map cleanly to gh-pages subdirectories
     eleventyConfig.addPlugin(HtmlBasePlugin);
+
+    // Configure Markdown behaviour to open external links in new tabs
+    eleventyConfig.amendLibrary("md", mdLib => {
+        mdLib.use(markdownItLinkAttributes, {
+            pattern: /^https?:/,
+            attrs: {
+                target: "_blank",
+                rel: "noopener noreferrer"
+            }
+        });
+    });
 
     // Passthrough copy for images and static assets
     eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
