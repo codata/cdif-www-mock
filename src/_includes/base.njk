@@ -32,9 +32,10 @@
             <div class="flex h-16 items-center justify-between">
                 <!-- Logo -->
                 <div class="flex-shrink-0 group">
-                    <a href="/" class="flex items-center gap-3">
+                    <a href="/" class="flex items-center gap-3 relative">
                         <!-- Use a standard image, relying on CSS for visual pop -->
-                        <img class="h-10 w-auto transition-transform duration-300 group-hover:scale-105" src="/assets/images/cdif+300-transparent.png" alt="CODATA CDIF Logo">
+                        <div class="absolute inset-0 bg-white/40 blur-[16px] rounded-full scale-110 pointer-events-none transition-opacity duration-300 group-hover:bg-white/60"></div>
+                        <img class="relative z-10 h-10 w-auto transition-transform duration-300 group-hover:scale-105" src="/assets/images/cdif+300-transparent.png" alt="CODATA CDIF Logo">
                     </a>
                 </div>
                 
@@ -119,12 +120,55 @@
         
         <!-- Mobile Menu panel -->
         <div x-show="menuOpen" class="md:hidden glass border-t border-gray-200">
-            <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            <div class=" अंतरिक्ष-y-1 px-2 pb-3 pt-2 sm:px-3">
                  {% for section in collections.sections %}
                     {% if section.data.title and section.data.order > 1 %}
                     <a href="#section-{{ section.data.order }}" @click="menuOpen = false" class="block rounded-md px-3 py-2 text-base font-medium hover:bg-theme-accent hover:text-white">{{ section.data.title }}</a>
                     {% endif %}
                 {% endfor %}
+            </div>
+            <div class="border-t border-theme-text/10 pb-4 pt-4 px-4 flex flex-wrap gap-4">
+                <!-- Mobile Background Switcher -->
+                <div class="relative inline-block text-left" x-data="{ open: false }">
+                    <div>
+                        <button @click="open = !open" type="button" class="inline-flex items-center text-sm font-semibold tracking-wide text-theme-muted hover:text-theme-text transition-colors focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                            <svg class="w-4 h-4 mr-1.5 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <span class="capitalize" x-text="(heroBg.replace('-', ' ') + ' BG')"></span>
+                        </button>
+                    </div>
+                    <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-100" class="absolute left-0 z-[60] mt-3 w-48 origin-top-left rounded-md bg-theme-surface shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu">
+                        <div class="py-1" role="none">
+                            <button @click="heroBg = 'orbs'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Orbs (Default)</button>
+                            <button @click="heroBg = 'particles'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Particles Grid</button>
+                            <button @click="heroBg = 'cyber-grid'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Cyber Grid 3D</button>
+                            <button @click="heroBg = 'abstract-rings'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Abstract Rings</button>
+                            <button @click="heroBg = 'minimal'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Minimal Glow</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Theme Switcher -->
+                <div class="relative inline-block text-left" x-data="{ open: false }">
+                    <div>
+                        <button @click="open = !open" type="button" class="inline-flex items-center text-sm font-semibold tracking-wide text-theme-muted hover:text-theme-text transition-colors focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                            <svg class="w-4 h-4 mr-1.5 opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                            <span class="capitalize" x-text="theme.replace('-', ' ')"></span>
+                        </button>
+                    </div>
+
+                    <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-100" class="absolute left-0 z-[60] mt-3 w-56 origin-top-left rounded-md bg-theme-surface shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu">
+                        <div class="py-1" role="none">
+                            <button @click="theme = 'minimalist-light'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Minimalist (Light)</button>
+                            <button @click="theme = 'minimalist-dark'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Minimalist (Dark)</button>
+                            <button @click="theme = 'professional'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Professional (Classic)</button>
+                            <button @click="theme = 'professional-dark'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Professional (Dark)</button>
+                            <button @click="theme = 'tech-forward'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Tech-Forward</button>
+                            <div class="border-t border-theme-text/10 my-1"></div>
+                            <button @click="theme = 'academic'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Academic / Scholarly</button>
+                            <button @click="theme = 'global-network'; open = false" class="block w-full text-left px-4 py-2 text-sm hover:bg-theme-accent hover:text-white">Global Network</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
