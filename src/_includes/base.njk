@@ -18,13 +18,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Alpine JS -->
+    <!-- Alpine JS Plugins -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.14.8/dist/cdn.min.js"></script>
+    <!-- Alpine JS Core -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
     
     <!-- Custom Tailwind Styles -->
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body x-data="{ theme: 'minimalist-light', heroBg: 'orbs', menuOpen: false }" :data-theme="theme" class="antialiased min-h-screen flex flex-col transition-colors duration-300">
+<body x-data="{ theme: $persist('minimalist-light'), heroBg: $persist('orbs'), menuOpen: false }" :data-theme="theme" class="antialiased min-h-screen flex flex-col transition-colors duration-300">
     
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 w-full glass shadow-sm transition-all duration-300">

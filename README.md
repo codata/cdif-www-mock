@@ -1,5 +1,7 @@
 # CDIF Website (Cross-Domain Interoperability Framework)
 
+**🌍 Live Staging Preview:** [https://codata.github.io/cdif-www-mock/](https://codata.github.io/cdif-www-mock/)
+
 This repository contains the source code for the official website of the **Cross-Domain Interoperability Framework (CDIF)**, a project supported by CODATA.
 
 The website serves as the primary landing page, marketing site, and introduction to the CDIF standard and its various components, acting as a gateway to the official Book and GitHub repositories.
@@ -37,7 +39,7 @@ This site is built focusing on extreme performance, simplicity, and flexibility:
    npm run start
    ```
    This command starts both the Tailwind CLI (watching for CSS changes) and the Eleventy development server.
-   The site will be available at: `http://localhost:8080`
+   Due to the GitHub Pages configuration, the local site will be available at: `http://localhost:8080/cdif-www-mock/`
 
 4. **Build for production:**
    ```bash
