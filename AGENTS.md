@@ -1,55 +1,51 @@
 # CODATA CDIF Website Project
 
-This project aims to create a modern, high-performance website for the **CODATA Cross-Domain Information Framework (CDIF)**. The site serves as the primary information hub for researchers and organizations adopting the framework.
+This project aims to create a modern, high-performance website for the **CODATA Cross-Domain Interoperability Framework (CDIF)**. The site serves as the primary information hub for researchers and organizations adopting the framework.
 
 ## 🎯 Objectives
-- **Maintainability:** Easy for non-technical users to update via Markdown.
-- **Responsiveness:** Flawless experience across mobile, tablet, and desktop.
-- **Performance:** Optimized for speed and low-latency delivery.
-- **Accessibility:** Adherence to web accessibility standards.
-- **Design Excellence:** Showcase the framework through premium, professional aesthetics.
+- **Maintainability:** Easy for non-technical users to update via Markdown content separation.
+- **Responsiveness:** Flawless experience across mobile, tablet, and desktop, including cohesive mobile navigation.
+- **Performance:** Optimized for speed and low-latency delivery using a modern static stack.
+- **Accessibility:** Adherence to web accessibility standards and high-contrast adaptability.
+- **Design Excellence:** Showcase the framework through premium, professional aesthetics featuring rich interactions, smooth transitions, and dynamic theming.
 
 ## 🎨 Branding & Design
-The design is informed by concepts generated in **Stitch Project [7705784665390816008](https://stitch.google.com/projects/7705784665390816008)**.
+The design architecture is deeply interactive, utilizing a unified theming system and modern CSS properties like `color-mix()` for organic "Glassmorphism" effects across layouts. 
 
-### Reference Mockups
-- **Location:** `mockups/` directory.
-- **Key Assets:**
-    - `stitch_01_light.png`: Architecture for the light theme.
-    - `stitch_01_dark.png`: Architecture for the dark theme.
-    - `cdif+300-transparent.png`, `cdif+480-transparent.png`, `cdif+640-transparent.png`: Official CDIF logos (transparent background).
+### Core Asssets
+- **Location:** `src/assets/images/` directory.
+- **Key Assets:** `cdif+300-transparent.png`, `cdif+480-transparent.png`, `cdif+640-transparent.png` (Official responsive logos).
 
-### Design Guidelines
-- **Clean Separation:** Content must be strictly separated from branding and styling.
-- **Theme Variations:** Generate **3-5 theme variations** (light/dark pairs) based on:
-    - **Minimalist:** Focus on clarity and typography.
-    - **Professional:** Corporate and structured grid design.
-    - **Tech-Forward:** Modern interface with subtle gradients and interactions.
-- **Interactivity:** Themes should be selectable by the user in real-time.
+### Design Guidelines & Implementations
+- **Clean Separation:** Content is strictly separated into the `content/` folder, processed dynamically via Eleventy Collections based on frontmatter `order`.
+- **Theme Variations:** The site implements a scalable Tailwind CSS v4 `@theme` architecture. Users can immediately toggle between:
+    - **Minimalist (Light/Dark):** Focus on clarity, typography, and pure contrast.
+    - **Professional (Light/Dark):** Corporate, structured grid design with stark edges.
+    - **Tech-Forward (Dark):** Deep blacks, slate accents, and a modern interface.
+    - **Academic (Light):** Muted scholarly tones (sepia/ivory) and classic typography.
+    - **Global Network (Dark):** Vibrant, high-contrast cyan/teal theme evoking data nodes.
+- **Dynamic Hero Backgrounds:** The Hero section features 5 distinct, animated SVG/CSS backgrounds (Orbs, Particles, Cyber Grid, Abstract, Minimal) toggleable by the user.
+- **State Persistence:** User aesthetic preferences (Theme and Background) are gracefully remembered across sessions via the Alpine.js `$persist` plugin via LocalStorage.
+- **CODATA Alignment:** The parent organization (CODATA) is prominently linked and attributed in the Hero, Footer, and explicitly within component descriptors.
 
 ## 📝 Content Strategy
-The site is initially a single-page landing site but built to be scalable.
+The site is driven by a single-page scrolling landing site logic, populated by atomic markdown files.
 
-### Required Sections
-1. **Header:** Logo, navigation menu, and social media/community icons.
-2. **Hero:** High-impact introduction to CDIF with a clear call-to-action.
-3. **Introduction:** Deep dive into the mission and goals of CDIF.
-4. **Tools & Implementations:** Showcase of existing CDIF tools.
-5. **Core CDIF Profiles:** Overview of the framework's architectural components.
-6. **Future Directions:** Roadmap and upcoming framework evolutions.
-7. **To Learn More:** Resource links, documentation, and community portals.
-8. **Footer:** Secondary navigation, social links, Privacy Policy, and Terms of Use.
-
-### Content Reference
-- **Primary Source:** `references/cdif_book_introduction.md`
-- **Mapping:**
-    - "Introducing CDIF" section -> **Introduction** section of the landing page.
-    - "Five core profiles" list -> **Core CDIF Profiles** section.
-    - "Who can use the CDIF?" -> **Target Audience** (within About or Introduction).
-    - "How to contribute" -> **Contact/Community** section.
+### Rendered Sections
+1. **Header:** Responsive Glassmorphism bar with logo, smooth-scroll navigation, mobile hamburger menu, and discrete Theme/Hero Background switchers.
+2. **Hero (`01-hero.md`):** High-impact introduction to CDIF with a dedicated "CDIF Book" visual card, dynamic badges, and clear call-to-action buttons.
+3. **Information Modules (`02` through `06`):**
+    - Introduction & Mission
+    - Core CDIF Profiles
+    - Tools & Implementations
+    - Future Directions
+    - Community Resources
+4. **Standalone Pages:** Fully styled external Markdown files wrapping legal documentation (Privacy Policy, Terms of Use) via the `page.njk` layout.
+5. **Footer:** Secondary navigation, direct links to Zenodo Reports, Book, GitHub Org, and CODATA roots.
+6. **Reviewer Features:** A fixed floating UI action button is present across the mock to drive UX/UI feedback straight to the GitHub Issues portal.
 
 ## 🛠 Technical Stack
-- **Static Site Generator:** [11ty (Eleventy)](https://www.11ty.dev/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Interactivity:** [Alpine.js](https://alpinejs.dev/)
-- **Deployment:** GitHub Actions targeting automated continuous deployment.
+- **Static Site Generator:** [11ty (Eleventy) v3.0](https://www.11ty.dev/) utilizing the `HtmlBasePlugin` for sub-directory hosting support.
+- **Styling:** [Tailwind CSS v4.0](https://tailwindcss.com/) with the Typography plugin.
+- **Interactivity:** [Alpine.js](https://alpinejs.dev/) & [Alpine Persist Plugin](https://alpinejs.dev/plugins/persist).
+- **Deployment:** GitHub Actions (`.github/workflows/deploy.yml`) explicitly targeting **GitHub Pages** continuous deployment environments upon changes to the `main` branch.
