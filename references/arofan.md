@@ -50,6 +50,6 @@ Upcoming releases will look at supporting the detailed eescription of a broader 
 **CDIF Book**
 CDIF was first released in May 2024 as an output of the WorldFAIR project. The point of reference for CDIF and its component profiles is now the CDIF Book.
 
-**Chat with CDIF** 
+**[Chat with CDIF](https://notebooklm.google.com/notebook/5833376b-c169-433e-9743-0b6b3a928585)** 
 
 AI-driven exploration of the standards and documentation for CDIF.

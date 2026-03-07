@@ -14,5 +14,5 @@ A major goal of CDIF is to streamline the workflow from needing particular data 
 ### To Learn More
 
 - 📖 **The CDIF Book:**  First released in May 2024 as an output of the WorldFAIR project, the definitive point of reference for CDIF and its component profiles is now the [CDIF Book](https://doi.org/10.5281/zenodo.11236871).
-- 🤖 **Chat with CDIF:** Engage with an AI-driven exploration of the standards, guidelines, and documentation for CDIF.
+- 🤖 **[Chat with CDIF](https://notebooklm.google.com/notebook/5833376b-c169-433e-9743-0b6b3a928585):** Engage with an AI-driven exploration of the standards, guidelines, and documentation for CDIF.
 - 🎥 **Webinar:** [Presentations and recording from our latest webinar](https://codata.org/the-cross-domain-interoperability-framework-cdif-practical-guidelines-for-fair-interoperability-webinar-25-july/).
