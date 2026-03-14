@@ -15,17 +15,22 @@ The website is built so that almost every piece of text is stored in simple **Ma
 
 | Goal | Where to look | File Type |
 | :--- | :--- | :--- |
-| **Change page intro text** | `src/_data/site.json` | JSON |
-| **Update the News/Events** | `src/_data/news.json` | JSON |
-| **Add a new Project** | `src/_data/projects.json` | JSON |
-| **Update Members/Groups** | `src/_data/membership.json` | JSON |
-| **Change Home Page text** | `content/` folder | Markdown |
+| **Change page titles/intro text** | `src/_data/site.json` | JSON |
+| **Update News & Events** | `src/_data/news.json` | JSON |
+| **Add/Edit Projects** | `src/_data/projects.json` | JSON |
+| **Add/Edit Strategic Partners** | `src/_data/partners.json` | JSON |
+| **Update the History Timeline** | `src/_data/timeline.json` | JSON |
+| **Manage Working Groups/Members** | `src/_data/membership.json` | JSON |
+| **Home Page Narrative Content** | `content/` folder | Markdown |
 
 ---
 
 ## 🤖 Option 1: Using AI Agents (GitHub Copilot) - Recommended
 
 If you have access to **GitHub Copilot** (either on the GitHub website or in VS Code), you can perform updates by simply asking the AI to do the work for you. This is the **most efficient, hands-off way** to handle repetitive updates or complex data files.
+
+> [!NOTE]
+> GitHub Copilot requires a [subscription](https://github.com/features/copilot/plans) ($10/month), and is **free for individuals** who contribute to popular open-source projects. 
 
 ### How to use it:
 1.  **Open the Chat**: Look for the Copilot icon (a small robot head or sparkle) in your side panel or at the bottom of the screen.
@@ -150,16 +155,30 @@ Keep the structure intact. If you miss a comma `,` at the end of a line, the sit
 
 ### 4. Managing Working Groups & Members
 *   **File**: `src/_data/membership.json`
-*   **Adding a Person**: Add them to the `"people"` list first with a unique ID (like `"jane-doe"`).
-*   **Assigning to Group**: Find the `"workingGroups"` list and add that ID (e.g., `"jane-doe"`) to the `"members"` array of the correct group.
+*   **Adding a Person**: Add them to the `"people"` object first with their details.
+*   **Assigning Roles**: Find the group in `"workingGroups"` and add the person's ID (e.g., `"jane-doe"`) to the correct role array: `"chair"`, `"cochair"`, `"secretary"`, `"member"`, or `"observer"`.
     ```json
-    "members": ["arofan", "simcox", "jane-doe"]
+    "chair": ["arofan"],
+    "member": ["pascal", "jane-doe"]
     ```
 
 ### 5. Quick Text Edits on the Home Page
 *   **Location**: `content/` folder.
 *   **Action**: Each section of the home page is its own file (e.g., `03-profiles.md`, `05-governance.md`).
 *   **Editing**: Open the file, find the text you want to change, and edit it just like a Word document. Save the file, and the update will appear in that specific section of the homepage.
+
+### 6. Updating the Project History Timeline
+*   **File**: `src/_data/timeline.json`
+*   **Action**: This file is a list of milestones. Add a new block at the top for the most recent events.
+    ```json
+    {
+      "period": "2026",
+      "title": "Global Adoption Phase",
+      "description": "CDIF modules see widespread adoption across five major scientific continents.",
+      "side": "right"
+    },
+    ```
+*   **Tip**: Use `"side": "left"` or `"side": "right"` to alternate the bubbles on the timeline for better visual balance.
 
 ---
 
