@@ -1,0 +1,65 @@
+[
+  {
+    "id": "event-2",
+    "type": "event",
+    "title": "FAIR Data Symposium 2026",
+    "date": "2026-05-20",
+    "summary": "CDIF will be featured prominently in the technical track of the upcoming FAIR Data Symposium.",
+    "link": "https://fair-symposium.org",
+    "tags": ["Conference", "FAIR"]
+  },
+  {
+    "id": "pub-1",
+    "type": "publication",
+    "title": "Cross-Domain Metadata Interoperability: A Technical White Paper",
+    "date": "2026-05-10",
+    "summary": "This new technical publication details the underlying architectural patterns used in CDIF for semantic mapping.",
+    "link": "https://doi.org/10.5281/zenodo.pub123",
+    "tags": ["Technical", "White Paper", "Architecture"]
+  },
+  {
+    "id": "event-1",
+    "type": "event",
+    "title": "CDIF Public Consultation Webinar",
+    "date": "2026-04-15",
+    "summary": "Join us for a deep dive into the CDIF 1.0 draft modules and provide your feedback.",
+    "link": "https://codata.org/events/cdif-webinar",
+    "tags": ["Consultation", "FAIR", "Webinar"]
+  },
+  {
+    "id": "pub-2",
+    "type": "publication",
+    "title": "Case Study: CDIF Implementation in Global Health Data",
+    "date": "2026-03-25",
+    "summary": "A comprehensive analysis of how CDIF profiles were applied to harmonize health surveys across multiple continents.",
+    "link": "https://doi.org/10.5281/zenodo.pub456",
+    "tags": ["Health Data", "Case Study", "Implementation"]
+  },
+  {
+    "id": "news-1",
+    "type": "news",
+    "title": "CDIF Version 1.0 Draft Released",
+    "date": "2026-03-01",
+    "summary": "The first public draft of the Cross-Domain Interoperability Framework is now available for review.",
+    "link": "https://doi.org/10.5281/zenodo.11236871",
+    "tags": ["Release", "Announcement"]
+  },
+  {
+    "id": "news-2",
+    "type": "news",
+    "title": "Implementation Guidelines for Geospatial Data",
+    "date": "2026-02-15",
+    "summary": "Specific focus group results on geospatial metadata mappings published.",
+    "link": "https://book.cdif.org",
+    "tags": ["Geospatial", "Guide"]
+  },
+  {
+    "id": "news-3",
+    "type": "news",
+    "title": "New Governance Structure Approved",
+    "date": "2026-01-10",
+    "summary": "CODATA formalizes the technical advisory board for CDIF sustainability.",
+    "link": "/membership/",
+    "tags": ["Governance", "CODATA"]
+  }
+]

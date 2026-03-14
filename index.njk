@@ -5,41 +5,21 @@ layout: base.njk
 {% for section in collections.sections %}
     {% if section.data.order == 1 %}
         <!-- HERO SECTION -->
-        <section id="section-{{ section.data.order }}" class="relative pt-32 pb-24 lg:pt-40 lg:pb-32 flex items-center min-h-[80vh] isolate">
-            <!-- Premium Background & Animated Gradients -->
+        <section id="section-{{ section.data.order }}" class="relative pt-20 pb-12 lg:pt-24 lg:pb-16 flex flex-col items-center min-h-[90vh] lg:min-h-screen isolate">
+            <!-- Premium Background: Abstract Rings (Fixed for Professional Theme) -->
             <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-                
-                 <!-- Background 1: Orbs (Default) -->
-                 <div x-show="heroBg === 'orbs'" x-transition.opacity.duration.700ms class="absolute inset-0">
-                     <div class="absolute top-[-10%] right-[0%] w-[500px] h-[500px] rounded-full bg-theme-accent blur-[80px] opacity-40 animate-pulse" style="animation-duration: 6s;"></div>
-                     <div class="absolute bottom-[10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-blue-500 blur-[100px] opacity-40"></div>
-                 </div>
-
-                 <!-- Background 2: Particles Grid -->
-                 <div x-show="heroBg === 'particles'" x-transition.opacity.duration.700ms class="absolute inset-0" 
-                      style="background-image: radial-gradient(currentcolor 1.5px, transparent 1.5px); background-size: 32px 32px; opacity: 0.4; -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 80%);">
-                 </div>
-
-                 <!-- Background 3: Cyber Grid 3D -->
-                 <div x-show="heroBg === 'cyber-grid'" x-transition.opacity.duration.700ms class="absolute inset-0 flex items-end justify-center overflow-hidden [perspective:1000px]">
-                     <div class="absolute w-[200%] h-[150%] bottom-0 [transform-origin:bottom_center] [transform:rotateX(75deg)] opacity-40">
-                          <div class="absolute inset-0 bg-[linear-gradient(to_right,currentcolor_2px,transparent_2px),linear-gradient(to_bottom,currentcolor_2px,transparent_2px)] bg-[size:4rem_4rem]" style="-webkit-mask-image: radial-gradient(ellipse at top, black 0%, transparent 70%);"></div>
-                     </div>
-                 </div>
-
-                 <!-- Background 4: Abstract Rings -->
-                 <div x-show="heroBg === 'abstract-rings'" x-transition.opacity.duration.700ms class="absolute inset-0 flex items-center justify-end overflow-hidden opacity-60">
-                     <div class="absolute w-[800px] h-[800px] right-[-20%] rounded-full border-2 border-theme-text/30 flex items-center justify-center">
-                         <div class="w-[600px] h-[600px] rounded-full border-2 border-theme-text/30 flex items-center justify-center">
-                             <div class="w-[400px] h-[400px] rounded-full border-2 border-theme-text/30"></div>
+                 <div class="absolute inset-0 flex items-center justify-end overflow-hidden opacity-30">
+                     <div class="absolute w-[800px] h-[800px] right-[-10%] rounded-full border border-theme-text/20 flex items-center justify-center">
+                         <div class="w-[600px] h-[600px] rounded-full border border-theme-text/20 flex items-center justify-center">
+                             <div class="w-[400px] h-[400px] rounded-full border border-theme-text/20"></div>
                          </div>
                      </div>
                  </div>
-
-                 <!-- Background 5: Minimal Glow -->
-                 <div x-show="heroBg === 'minimal'" x-transition.opacity.duration.700ms class="absolute inset-0 bg-gradient-to-b from-theme-accent/20 via-theme-accent/5 to-transparent"></div>
                  
-                 <!-- Fade out the background effects smoothly at the bottom of hero -->
+                 <!-- Subtle Gradient Glow -->
+                 <div class="absolute inset-0 bg-gradient-to-tr from-theme-accent/5 via-transparent to-transparent opacity-50"></div>
+                 
+                 <!-- Fade out gradient at bottom -->
                  <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-theme-bg to-transparent pointer-events-none z-10"></div>
             </div>
 
@@ -53,7 +33,7 @@ layout: base.njk
                               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-theme-accent opacity-75"></span>
                               <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-theme-accent"></span>
                             </span>
-                            Introducing CDIF 1.0
+                            {{ site.hero.badge }}
                         </div>
                         
                         <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] text-theme-text drop-shadow-sm">
@@ -65,6 +45,7 @@ layout: base.njk
                         </p>
                         
                         <div class="mt-8 flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+                            {% if section.data.cta_primary_link %}
                             <a href="{{ section.data.cta_primary_link }}" class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-[var(--radius-theme)] text-theme-accent-fg bg-theme-accent overflow-hidden transition-all shadow-lg hover:shadow-theme-accent/40 hover:-translate-y-1 ring-1 ring-black/10">
                                 <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-10"></span>
                                 <span class="relative flex items-center gap-2">
@@ -74,9 +55,13 @@ layout: base.njk
                                     </svg>
                                 </span>
                             </a>
-                            <a href="{{ section.data.cta_secondary_link }}" target="_blank" class="inline-flex items-center justify-center px-8 py-4 border border-theme-text/10 text-base font-semibold rounded-[var(--radius-theme)] text-theme-text bg-white/5 backdrop-blur-md hover:bg-theme-surface transition-all hover:border-theme-text/20 hover:-translate-y-1 shadow-sm">
+                            {% endif %}
+
+                            {% if section.data.cta_secondary_link %}
+                            <a href="{{ section.data.cta_secondary_link }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 border border-theme-text/10 text-base font-semibold rounded-[var(--radius-theme)] text-theme-text bg-white/5 backdrop-blur-md hover:bg-theme-surface transition-all hover:border-theme-text/20 hover:-translate-y-1 shadow-sm">
                                 {{ section.data.cta_secondary_text }}
                             </a>
+                            {% endif %}
                         </div>
                     </div>
 
@@ -94,12 +79,12 @@ layout: base.njk
                             </div>
                             
                             <div>
-                                <div class="text-xs font-bold uppercase tracking-widest text-theme-accent mb-2">Comprehensive Guide</div>
-                                <h3 class="text-2xl font-bold text-theme-text mb-2 leading-tight">The CDIF Book</h3>
-                                <p class="text-sm text-theme-muted mb-6">Read the foundational guidelines and implementation patterns online.</p>
+                                <div class="text-xs font-bold uppercase tracking-widest text-theme-accent mb-2">{{ site.hero.bookCard.prefix }}</div>
+                                <h3 class="text-2xl font-bold text-theme-text mb-2 leading-tight">{{ site.hero.bookCard.title }}</h3>
+                                <p class="text-sm text-theme-muted mb-6">{{ site.hero.bookCard.description }}</p>
                                 
                                 <div class="inline-flex items-center text-sm font-semibold text-theme-text group-hover:text-theme-accent transition-colors">
-                                    Read Now
+                                    {{ site.hero.bookCard.cta }}
                                     <svg class="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                     </svg>
@@ -107,14 +92,64 @@ layout: base.njk
                             </div>
                         </a>
                     </div>
-                    
+                </div>
+
+                <!-- NEWS TICKER INTEGRATED INTO HERO -->
+                <div id="news-ticker" class="w-full mt-14 lg:mt-20 mb-8 lg:mb-12 scroll-mt-32">
+                    <div class="bg-theme-surface/30 backdrop-blur-md py-4 border border-theme-text/10 overflow-hidden whitespace-nowrap relative shadow-md">
+                        <div class="absolute inset-0 z-10 pointer-events-none flex justify-between">
+                            <div class="h-full w-12 bg-gradient-to-r from-theme-bg/20 to-transparent"></div>
+                            <div class="h-full w-12 bg-gradient-to-l from-theme-bg/20 to-transparent"></div>
+                        </div>
+                        
+                        <div class="flex items-center h-full">
+                            <div class="flex-shrink-0 bg-theme-accent text-theme-accent-fg px-4 py-1 text-[10px] font-bold uppercase tracking-widest z-20 ml-4 shadow-sm">
+                                Latest
+                            </div>
+                            
+                            <div class="relative overflow-hidden flex-grow px-4">
+                                <div class="flex animate-ticker whitespace-nowrap hover:[animation-play-state:paused]">
+                                    {% for item in news %}
+                                    <div class="inline-flex items-center px-6">
+                                        <span class="text-xs font-medium text-theme-muted mr-3">{{ item.date }}</span>
+                                        <span class="text-[9px] font-bold uppercase tracking-wider text-theme-accent opacity-60 mr-2">[{{ item.type }}]</span>
+                                        <a href="/news-events/#{{ item.id }}" class="text-sm font-semibold text-theme-text hover:text-theme-accent transition-colors">
+                                            {{ item.title }}
+                                        </a>
+                                    </div>
+                                    {% endfor %}
+                                    
+                                    <!-- Duplicate for seamless loop -->
+                                    {% for item in news %}
+                                    <div class="inline-flex items-center px-6">
+                                        <span class="text-xs font-medium text-theme-muted mr-3">{{ item.date }}</span>
+                                        <span class="text-[9px] font-bold uppercase tracking-wider text-theme-accent opacity-60 mr-2">[{{ item.type }}]</span>
+                                        <a href="/news-events/#{{ item.id }}" class="text-sm font-semibold text-theme-text hover:text-theme-accent transition-colors">
+                                            {{ item.title }}
+                                        </a>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <style>
+            @keyframes ticker {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            .animate-ticker {
+                animation: ticker 15s linear infinite;
+            }
+        </style>
+
     {% else %}
         <!-- STANDARD SECTION -->
-        <section id="section-{{ section.data.order }}" class="py-12 lg:py-16 relative {% if loop.index % 2 == 0 %}bg-theme-surface/50{% endif %}">
+        <section id="section-{{ section.data.order }}" class="py-12 lg:py-16 relative scroll-mt-24 {% if loop.index % 2 == 0 %}bg-theme-surface/50{% endif %}">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
                     
@@ -130,7 +165,7 @@ layout: base.njk
                     <div class="lg:w-2/3 w-full">
                         <div class="prose prose-lg md:prose-xl max-w-none 
                                     text-theme-text/90 
-                                    prose-a:text-theme-accent prose-a:font-semibold prose-a:no-underline hover:prose-a:underline prose-a:underline-offset-4
+                                    prose-a:text-theme-accent prose-a:font-semibold prose-a:no-underline prose-a:hover:underline prose-a:underline-offset-4
                                     prose-headings:text-theme-text prose-headings:font-bold prose-headings:tracking-tight
                                     prose-strong:text-theme-text prose-strong:font-bold
                                     prose-li:text-theme-text/90 prose-li:marker:text-theme-accent
@@ -145,4 +180,3 @@ layout: base.njk
         </section>
     {% endif %}
 {% endfor %}
-

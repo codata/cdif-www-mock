@@ -1,0 +1,51 @@
+[
+  {
+    "name": "CDIF4XAS",
+    "description": "Describing X-Ray Spectroscopy Data for Cross-Domain Use. It enhances the interoperability and reusability of XAS data within EOSC infrastructures using the CDIF framework.",
+    "link": "https://oscars-project.eu/projects/cdif4xas",
+    "license": "CC-BY-4.0",
+    "logo": ""
+  },
+  {
+    "name": "ClimateAdapt4EOSC",
+    "description": "A Horizon Europe initiative creating a seamless, FAIR-compliant research environment for climate adaptation data and services within the European Open Science Cloud (EOSC).",
+    "link": "https://zenodo.org/communities/climateadapt4eosc/",
+    "license": "CC-BY-4.0",
+    "logo": ""
+  },
+  {
+    "name": "Dataverse",
+    "description": "Open-source research data repository software developed at Harvard IQSS. It enables researchers to share, preserve, cite, and analyze research data with rich metadata support.",
+    "link": "https://dataverse.org/",
+    "license": "Apache-2.0",
+    "logo": ""
+  },
+  {
+    "name": "Nectar",
+    "description": "The ARDC Nectar Research Cloud provides Australia's research community with self-service interactive computing and storage infrastructure for data-intensive workflows.",
+    "link": "https://ardc.edu.au/services/nectar-research-cloud/",
+    "license": "Open Infrastructure",
+    "logo": ""
+  },
+  {
+    "name": "Deeptime Digital Earth",
+    "description": "An IUGS-led international program to harmonize global deep-time geodata, creating an interoperable network of geological databases to advance FAIR principles in geoscience.",
+    "link": "https://www.ddeworld.org/",
+    "license": "CC-BY-4.0",
+    "logo": ""
+  },
+  {
+    "name": "PSDI",
+    "description": "The Physical Sciences Data Infrastructure (PSDI) connects UK research platforms and services to provide unified access to cross-disciplinary data, software, and models.",
+    "link": "https://www.psdi.ac.uk/",
+    "license": "CC-BY-4.0",
+    "logo": ""
+  },
+  {
+    "name": "Data Artifex",
+    "description": "An open-source Python ecosystem designed to transform raw data into API-powered, machine-actionable knowledge through rapid publication and semantic documentation.",
+    "link": "https://github.com/dataartifex",
+    "license": "MIT",
+    "logo": ""
+  }
+]

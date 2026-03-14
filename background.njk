@@ -1,0 +1,65 @@
+---
+layout: base.njk
+title: Background & History
+---
+
+<div class="py-24 bg-theme-bg">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+            <h1 class="text-4xl font-bold tracking-tight text-theme-text sm:text-5xl mb-6">{{ site.pages.background.title }}</h1>
+            <p class="text-xl text-theme-muted leading-relaxed">
+                {{ site.pages.background.lead }}
+            </p>
+        </div>
+
+        <div class="prose prose-lg text-theme-muted max-w-none mb-20">
+            <h2 class="text-theme-text text-3xl font-bold mb-6">{{ site.pages.background.evolution.title }}</h2>
+            {% for p in site.pages.background.evolution.paragraphs %}
+            <p class="leading-relaxed">{{ p }}</p>
+            {% endfor %}
+        </div>
+
+        <div class="relative">
+            <h3 class="text-2xl font-bold text-theme-text mb-12 text-center">Development Journey</h3>
+            
+            <!-- Timeline Track -->
+            <div class="absolute left-0 sm:left-1/2 top-12 bottom-0 w-px bg-theme-text/10 -translate-x-1/2"></div>
+
+            <div class="space-y-12">
+                {% for item in timeline %}
+                {% set isRight = item.side == 'right' or (not item.side and loop.index % 2 == 0) %}
+                <div class="relative flex flex-col sm:flex-row items-center sm:justify-between group">
+                    <!-- Content Card Container -->
+                    <div class="sm:w-5/12 mb-8 sm:mb-0 {% if isRight %}sm:order-last{% else %}sm:text-right{% endif %}">
+                        <div class="p-6 bg-theme-surface rounded-xl border border-theme-text/5 shadow-sm group-hover:border-theme-accent/20 transition-all duration-300 {% if not isRight %}text-left sm:text-right{% endif %}">
+                            <span class="text-theme-accent font-bold text-lg">{{ item.period }}</span>
+                            <h3 class="text-xl font-bold text-theme-text mt-1">{{ item.title }}</h3>
+                            <p class="text-theme-muted mt-3 text-sm leading-relaxed">{{ item.description }}</p>
+                            
+                            {% if item.link %}
+                            <div class="mt-6 flex {% if not isRight %}sm:justify-end{% endif %}">
+                                <a href="{{ item.link }}" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="inline-flex items-center text-sm font-semibold text-theme-accent hover:text-theme-accent/80 transition-colors group/link">
+                                    Learn More
+                                    <svg class="ml-1 w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="9 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <!-- Node -->
+                    <div class="absolute left-0 sm:left-1/2 w-4 h-4 rounded-full bg-theme-bg border-[3px] border-theme-accent -translate-x-1/2 z-10 top-1/2"></div>
+                    
+                    <!-- Placeholder to push content to one side -->
+                    <div class="hidden sm:block sm:w-5/12 {% if isRight %}sm:order-first{% endif %}"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

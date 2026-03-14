@@ -1,0 +1,100 @@
+---
+layout: base.njk
+title: Membership & Working Groups
+---
+
+<div class="py-24 bg-theme-bg">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16 items-center">
+            <div class="lg:col-span-8">
+                <h1 class="text-4xl font-bold tracking-tight text-theme-text sm:text-5xl mb-6">{{ site.pages.membership.title }}</h1>
+                <p class="text-xl text-theme-muted leading-relaxed">
+                    {{ site.pages.membership.lead }}
+                </p>
+            </div>
+            <div class="lg:col-span-4">
+                <div class="p-6 bg-theme-surface/50 backdrop-blur-sm rounded-2xl border border-theme-accent/20 shadow-sm relative overflow-hidden group">
+                    <!-- Subtle accent glow -->
+                    <div class="absolute -right-4 -top-4 w-24 h-24 bg-theme-accent/5 rounded-full blur-2xl group-hover:bg-theme-accent/10 transition-colors"></div>
+                    
+                    <h2 class="text-xl font-bold text-theme-text mb-3 relative z-10">{{ site.pages.membership.join.title }}</h2>
+                    <p class="text-sm text-theme-muted mb-6 relative z-10">{{ site.pages.membership.join.description }}</p>
+                    <a href="{{ site.pages.membership.join.email }}" class="relative z-10 inline-flex items-center px-6 py-2.5 text-sm font-bold rounded-full text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all shadow-md hover:-translate-y-0.5">
+                        {{ site.pages.membership.join.cta }}
+                        <svg class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Working Groups TOC -->
+        <nav class="sticky top-[80px] z-30 mb-20 py-4 bg-theme-bg/95 backdrop-blur-xl border-b border-theme-text/10 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 shadow-sm">
+            <div class="flex flex-wrap items-center gap-3">
+                {% for group in membership.workingGroups %}
+                <a href="#group-{{ loop.index }}" class="inline-flex items-center px-4 py-2 rounded-full bg-theme-surface border border-theme-text/10 text-xs font-bold text-theme-text/70 hover:bg-theme-accent hover:text-white hover:border-theme-accent hover:-translate-y-0.5 transition-all duration-300 shadow-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-theme-accent mr-2 opacity-50 bg-current"></span>
+                    {{ group.name }}
+                </a>
+                {% endfor %}
+            </div>
+        </nav>
+
+        <div class="space-y-32">
+            {% for group in membership.workingGroups %}
+            <section id="group-{{ loop.index }}" class="border-t border-theme-text/10 pt-16 scroll-mt-32">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-2xl font-bold text-theme-text mb-4">{{ group.name }}</h2>
+                        <p class="text-theme-muted mb-6">{{ group.description }}</p>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-sm font-semibold uppercase tracking-wider text-theme-text opacity-70 mb-2">Key Topics</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    {% for topic in group.topics %}
+                                    <span class="px-3 py-1 bg-theme-surface border border-theme-text/10 rounded-full text-xs font-medium text-theme-muted">{{ topic }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold uppercase tracking-wider text-theme-text opacity-70 mb-2">Meeting Frequency</h3>
+                                <p class="text-sm text-theme-muted">{{ group.frequency }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-2">
+                        <h3 class="text-lg font-semibold text-theme-text mb-6">Group Members</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                            {% set roleLabels = { "chair": "Chair", "cochair": "Co-Chair", "secretary": "Secretary", "member": "Member", "observer": "Observer" } %}
+                            {% set rolesOrder = ["chair", "cochair", "secretary", "member", "observer"] %}
+                            
+                            {% for roleSlug in rolesOrder %}
+                                {% for memberId in group[roleSlug] %}
+                                    {% set person = membership.people[memberId] %}
+                                    <div class="bg-theme-surface/50 border border-theme-text/5 rounded-lg p-4 hover:border-theme-accent/30 hover:bg-theme-surface transition-all">
+                                        <div class="flex justify-between items-start mb-2 gap-2">
+                                            <h4 class="text-sm font-bold text-theme-text leading-tight">{{ person.name }}</h4>
+                                            <span class="flex-shrink-0 px-1.5 py-0.5 bg-theme-accent/10 text-theme-accent rounded text-[9px] font-bold uppercase">{{ roleLabels[roleSlug] }}</span>
+                                        </div>
+                                        <p class="text-[11px] text-theme-text/80 mb-3 leading-tight">{{ person.organization }}</p>
+                                        
+                                        <div class="flex flex-wrap gap-1 mt-auto">
+                                            {% for interest in person.interests %}
+                                            <span class="text-[8px] text-theme-muted opacity-80 italic">#{{ interest }}</span>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>

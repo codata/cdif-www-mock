@@ -1,0 +1,104 @@
+{
+  "name": "CDIF",
+  "fullName": "Cross-Domain Interoperability Framework",
+  "tagline": "A 'lingua franca' for FAIR implementation across domain boundaries.",
+  "hero": {
+    "badge": "Introducing CDIF 1.0",
+    "bookCard": {
+      "prefix": "Comprehensive Guide",
+      "title": "The CDIF Book",
+      "description": "Read the foundational guidelines and implementation patterns online.",
+      "cta": "Read Now"
+    }
+  },
+  "pages": {
+    "background": {
+      "title": "Background & History",
+      "lead": "The Cross-Domain Interoperability Framework represents more than a decade of international efforts to streamline data exchange across scientific fields.",
+      "evolution": {
+        "title": "The Evolution of CDIF",
+        "paragraphs": [
+          "CDIF was born out of the recognition that domain-specific standards, while essential for their own communities, often fail to provide the necessary metadata for effective reuse in multi-disciplinary research. By identifying the common core of metadata needed for discovery, access, and integration, CDIF provides a 'lingua franca' that bridges these gaps.",
+          "Today, the framework continues to evolve under the guidance of CODATA and a growing global community of FAIR data experts and practitioners."
+        ]
+      }
+    },
+    "projects": {
+      "title": "Projects & Partners",
+      "lead": "CDIF is being adopted and validated by a diverse range of international projects and research infrastructures.",
+      "partners": {
+        "title": "Strategic Partners"
+      }
+    },
+    "membership": {
+      "title": "Membership & Working Groups",
+      "lead": "Participation in CDIF is driven by our specialized Working Groups. Members typically represent organizations or major research projects committed to cross-domain interoperability.",
+      "join": {
+        "title": "Interested in Joining?",
+        "description": "We welcome contributions from individuals and organizations across all scientific domains. Express your interest in joining a working group today.",
+        "cta": "Contact Us",
+        "email": "mailto:members@cdif.org"
+      }
+    },
+    "news": {
+      "title": "Latest News & Events",
+      "lead": "Stay up to date with the latest developments in the Cross-Domain Interoperability Framework community."
+    },
+    "tools": {
+      "title": "Essential Tools",
+      "lead": "A curated collection of core tools designed to support the implementation and validation of CDIF across diverse platforms."
+    }
+  },
+  "footer": {
+    "description": "The Cross-Domain Interoperability Framework (CDIF) is a set of practical, implementation-level guidelines designed to improve data management practices and unlock cross-domain data reuse.",
+    "attribution": "A <a href='https://codata.org' target='_blank' class='text-theme-accent hover:underline underline-offset-4 pointer-events-auto'>CODATA</a> Supported Initiative.",
+    "links": {
+      "framework": [
+        {
+          "text": "Membership & WGs",
+          "url": "/membership/"
+        },
+        {
+          "text": "History & Background",
+          "url": "/background/"
+        },
+        {
+          "text": "Projects & Partners",
+          "url": "/projects/"
+        },
+        {
+          "text": "Technical Tools",
+          "url": "/tools/"
+        },
+        {
+          "text": "News & Events",
+          "url": "/news-events/"
+        }
+      ],
+      "resources": [
+        {
+          "text": "The CDIF Book",
+          "url": "https://book.cdif.org",
+          "external": true
+        },
+        {
+          "text": "Project Report",
+          "url": "https://doi.org/10.5281/zenodo.11236871",
+          "external": true
+        },
+        {
+          "text": "CDIF Landscape",
+          "url": "https://landscape.cdif.org",
+          "external": true
+        },
+        {
+          "text": "GitHub",
+          "url": "https://github.com/Cross-Domain-Interoperability-Framework",
+          "external": true,
+          "bold": true
+        }
+      ]
+    },
+    "copyright": "&copy; 2026 <a href='https://codata.org' target='_blank' class='hover:text-theme-accent transition-colors'>CODATA</a>. All rights reserved."
+  }
+}

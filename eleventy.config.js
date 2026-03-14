@@ -20,11 +20,16 @@ module.exports = function (eleventyConfig) {
     // Passthrough copy for images and static assets
     eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
 
+    // List of news items sorted by date descending for pagination
+    eleventyConfig.addFilter("sortRecent", (posts) => {
+        return [...posts].sort((a, b) => {
+            return new Date(b.date) - new Date(a.date);
+        });
+    });
+
     // Custom collection to ensure sections are ordered correctly
-    // Collections get populated from the `content` folder.
     eleventyConfig.addCollection("sections", function (collectionApi) {
         return collectionApi.getFilteredByGlob("content/*.md").sort(function (a, b) {
-            // Sort by the 'order' defined in frontmatter
             return Math.sign((a.data.order || 0) - (b.data.order || 0));
         });
     });

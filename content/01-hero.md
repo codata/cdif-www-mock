@@ -3,8 +3,8 @@ title: Cross-Domain Interoperability Framework (CDIF)
 subtitle: A 'lingua franca' for FAIR implementation across domain boundaries.
 cta_primary_text: Get Started
 cta_primary_link: "#section-2"
-cta_secondary_text: Read the Report
-cta_secondary_link: "https://doi.org/10.5281/zenodo.11236871"
+cta_secondary_text: What's New
+cta_secondary_link: "/news-events/"
 order: 1
 ---
 

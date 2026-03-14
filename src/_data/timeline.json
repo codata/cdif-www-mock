@@ -1,0 +1,22 @@
+[
+  {
+    "period": "2025",
+    "title": "Refinement & Testing",
+    "description": "Intensive community testing and refinement of the framework modules based on real-world implementation feedback from various scientific domains.",
+    "side": "left"
+  },
+  {
+    "period": "2023-2024",
+    "title": "The WorldFAIR Project",
+    "description": "Significant acceleration of CDIF development as part of the WorldFAIR project, resulting in the first structured drafts of the core profiles.",
+    "side": "right",
+    "link": "https://worldfair-project.eu/"
+  },
+  {
+    "period": "2020-2022",
+    "title": "Laying the Foundation",
+    "description": "Early conceptualization of the framework through pilot studies and cross-domain workshops involving multiple international data bodies.",
+    "side": "left",
+    "link": "https://codata.org/initiatives/strategic-programmes/decadal-programme/"
+  }
+]

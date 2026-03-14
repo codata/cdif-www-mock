@@ -1,0 +1,26 @@
+[
+  {
+    "name": "CODATA",
+    "logo": "/assets/images/codata-logo.svg",
+    "text": "CODATA",
+    "link": "https://codata.org"
+  },
+  {
+    "name": "DDI Alliance",
+    "logo": "/assets/images/ddi-logo.png",
+    "text": "DDI Alliance",
+    "link": "https://ddialliance.org"
+  },
+  {
+    "name": "W3C",
+    "logo": "https://www.w3.org/Icons/w3c_home",
+    "text": "W3C",
+    "link": "https://www.w3.org"
+  },
+  {
+    "name": "ISC",
+    "logo": "/assets/images/isc-logo.svg",
+    "text": "ISC",
+    "link": "https://council.science"
+  }
+]

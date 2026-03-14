@@ -1,5 +1,6 @@
 ---
 title: Introducing CDIF
+nav_title: Intro
 order: 2
 ---
 

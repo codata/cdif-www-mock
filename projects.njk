@@ -1,0 +1,70 @@
+---
+layout: base.njk
+title: Projects & Partners
+---
+
+<div class="py-24 bg-theme-bg">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-16">
+            <h1 class="text-4xl font-bold tracking-tight text-theme-text sm:text-5xl mb-6">{{ site.pages.projects.title }}</h1>
+            <p class="text-xl text-theme-muted leading-relaxed">
+                {{ site.pages.projects.lead }}
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {% for project in projects %}
+            <div class="flex flex-col p-8 bg-theme-surface/50 border border-theme-text/5 rounded-2xl hover:border-theme-accent/20 transition-all group scroll-mt-32">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="flex-shrink-0 w-20 h-20 bg-white/10 rounded-xl overflow-hidden shadow-inner flex items-center justify-center p-3 group-hover:bg-white/20 transition-all duration-500">
+                        {% if project.logo %}
+                        <img src="{{ project.logo }}" alt="{{ project.name }} Logo" class="max-w-full max-h-full object-contain filter brightness-110 group-hover:scale-110 transition-transform duration-500">
+                        {% else %}
+                        <img src="/assets/images/default-project.png" alt="Default Project Logo" class="max-w-full max-h-full object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-500">
+                        {% endif %}
+                    </div>
+                    <h2 class="text-2xl font-bold text-theme-text">{{ project.name }}</h2>
+                </div>
+                <p class="text-theme-muted mb-6 leading-relaxed flex-grow text-lg italic">"{{ project.description }}"</p>
+                <div class="mt-auto">
+                    <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-theme-accent hover:text-theme-accent/80 transition-colors">
+                        Visit Project Site
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="mt-24 p-12 bg-theme-surface rounded-3xl border border-theme-text/5 relative overflow-hidden">
+            <!-- Decorative gradient -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-theme-accent/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            
+            <h2 class="text-3xl font-bold text-theme-text mb-12 relative z-10 text-center sm:text-left">{{ site.pages.projects.partners.title }}</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
+                {% for partner in partners %}
+                <{% if partner.link %}a href="{{ partner.link }}" target="_blank" rel="noopener noreferrer"{% else %}div{% endif %} 
+                    class="flex items-center justify-center p-6 bg-white rounded-2xl shadow-premium border border-slate-100 hover:shadow-2xl transition-all duration-300 group grayscale opacity-70 hover:grayscale-0 hover:opacity-100">
+                    {% if partner.logo %}
+                    <img src="{{ partner.logo }}" alt="{{ partner.name }}" class="max-w-full h-12 object-contain group-hover:scale-110 transition-transform duration-300">
+                    {% else %}
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="/assets/images/default-partner.png" alt="Default Partner Logo" class="max-w-full h-10 object-contain group-hover:scale-110 transition-all duration-300 opacity-30 group-hover:opacity-100">
+                        <span class="font-black text-slate-800 tracking-tighter text-xs uppercase group-hover:text-theme-accent transition-colors">{{ partner.text }}</span>
+                    </div>
+                    {% endif %}
+                </{% if partner.link %}a{% else %}div{% endif %}>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Ensure dynamic images fit proportionally */
+    .project-logo-container img {
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    }
+</style>

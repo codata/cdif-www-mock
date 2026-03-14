@@ -7,38 +7,7 @@
 */
 
 @theme {
-  /* Define default values in the theme so Tailwind creates the correct utilities */
-  --color-theme-bg: #ffffff;
-  --color-theme-surface: #f9fafb;
-  --color-theme-text: #111827;
-  --color-theme-muted: #4b5563;
-  --color-theme-accent: #137fec;
-  --color-theme-accent-fg: #ffffff;
-  --radius-theme: 0.5rem;
-}
-
-/* Minimalist Light is covered by the fallback @theme above, but explicitly set for clarity */
-[data-theme="minimalist-light"] {
-  --color-theme-bg: #ffffff;
-  --color-theme-surface: #f9fafb;
-  --color-theme-text: #111827;
-  --color-theme-muted: #4b5563;
-  --color-theme-accent: #137fec;
-  --color-theme-accent-fg: #ffffff;
-  --radius-theme: 0.5rem;
-}
-
-[data-theme="minimalist-dark"] {
-  --color-theme-bg: #111827;
-  --color-theme-surface: #1f2937;
-  --color-theme-text: #f9fafb;
-  --color-theme-muted: #d1d5db;
-  --color-theme-accent: #3b82f6;
-  --color-theme-accent-fg: #ffffff;
-  --radius-theme: 0.5rem;
-}
-
-[data-theme="professional"] {
+  /* Professional Light (Default) */
   --color-theme-bg: #f8fafc;
   --color-theme-surface: #e2e8f0;
   --color-theme-text: #0f172a;
@@ -49,52 +18,13 @@
   --radius-theme: 0px;
 }
 
-[data-theme="professional-dark"] {
+[data-theme="dark"] {
   --color-theme-bg: #0f172a;
   --color-theme-surface: #1e293b;
   --color-theme-text: #f8fafc;
   --color-theme-muted: #cbd5e1;
   --color-theme-accent: #e2e8f0;
-  --color-theme-accent-fg: #0f172a; /* Dark text for contrast against light accent */
-  --font-sans: 'Space Grotesk', sans-serif;
-  --radius-theme: 0px;
-}
-
-[data-theme="tech-forward"] {
-  --color-theme-bg: #030712;
-  --color-theme-surface: #111827;
-  --color-theme-text: #f9fafb;
-  --color-theme-muted: #9ca3af;
-  --color-theme-accent: #137fec;
-  --color-theme-accent-fg: #ffffff;
-  --font-sans: 'Inter', sans-serif;
-  --radius-theme: 1rem;
-}
-
-/* New Creative Theme: Academic / Scholarly 
-   Focuses on readability, muted scholarly tones (sepia/ivory), and classic typography. */
-[data-theme="academic"] {
-  --color-theme-bg: #faf7f2;
-  --color-theme-surface: #f3efe6;
-  --color-theme-text: #2f2b25;
-  --color-theme-muted: #66635d;
-  --color-theme-accent: #8b3a3a; /* Deep crimson */
-  --color-theme-accent-fg: #ffffff;
-  --font-sans: 'Space Grotesk', serif;
-  --radius-theme: 0.25rem;
-}
-
-/* New Creative Theme: Global Network
-   Vibrant, high-contrast theme evoking connections, data nodes, and planetary scale. */
-[data-theme="global-network"] {
-  --color-theme-bg: #050511;
-  --color-theme-surface: #0a0b22;
-  --color-theme-text: #e0e6ff;
-  --color-theme-muted: #8b96cf;
-  --color-theme-accent: #00ffcc; /* Cyan / Teal */
-  --color-theme-accent-fg: #050511; /* Dark text for contrast against cyan */
-  --font-sans: 'Inter', sans-serif;
-  --radius-theme: 2rem; /* Extreme pill rounding */
+  --color-theme-accent-fg: #0f172a;
 }
 
 body {

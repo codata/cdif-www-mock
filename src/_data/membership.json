@@ -1,0 +1,139 @@
+{
+  "workingGroups": [
+    {
+      "id": "advisory",
+      "name": "Advisory Group",
+      "description": "The Advisory Group provides overall strategic direction and oversight for the CDIF framework and its evolution.",
+      "topics": [
+        "Strategy",
+        "Governance",
+        "Strategic Partnerships",
+        "Resource Allocation"
+      ],
+      "frequency": "Monthly",
+      "chair": [
+        "arofan"
+      ],
+      "cochair": [
+        "achim"
+      ],
+      "secretary": [],
+      "member": [
+        "pascal"
+      ],
+      "observer": []
+    },
+    {
+      "id": "discovery",
+      "name": "Discovery Working Group",
+      "description": "Focuses on the standards and methodologies for cross-domain resource discovery, primarily leveraging DCAT and Schema.org.",
+      "topics": [
+        "DCAT",
+        "Schema.org",
+        "Resource Description",
+        "Search APIs"
+      ],
+      "frequency": "Bi-weekly",
+      "chair": [
+        "achim"
+      ],
+      "cochair": [],
+      "secretary": [
+        "laura"
+      ],
+      "member": [],
+      "observer": []
+    },
+    {
+      "id": "integration",
+      "name": "Data Integration Working Group",
+      "description": "Drives the technical guidelines for structural data integration across different domain-specific formats.",
+      "topics": [
+        "Mapping",
+        "Transformation",
+        "Data Models",
+        "Syntactic Interoperability"
+      ],
+      "frequency": "Weekly",
+      "chair": [
+        "arofan"
+      ],
+      "cochair": [
+        "steve"
+      ],
+      "secretary": [],
+      "member": [],
+      "observer": []
+    }
+  ],
+  "people": {
+    "arofan": {
+      "name": "Arofan Gregory",
+      "organization": "CODATA",
+      "email": "arofan@codata.org",
+      "interests": [
+        "Metadata Standards",
+        "SDMX",
+        "DDI",
+        "FAIR"
+      ],
+      "expertise": [
+        "Information Architecture",
+        "Standardization"
+      ]
+    },
+    "achim": {
+      "name": "Achim Wacker",
+      "organization": "Independent",
+      "email": "achim@example.org",
+      "interests": [
+        "Data Engineering",
+        "Knowledge Graphs"
+      ],
+      "expertise": [
+        "DCAT",
+        "Python",
+        "Cloud Architecture"
+      ]
+    },
+    "pascal": {
+      "name": "Pascal Heus",
+      "organization": "CODATA",
+      "email": "pascal@example.org",
+      "interests": [
+        "Data Harmonization",
+        "Software Development"
+      ],
+      "expertise": [
+        "DDI",
+        "Web Development"
+      ]
+    },
+    "laura": {
+      "name": "Laura Molloy",
+      "organization": "CODATA",
+      "email": "laura@example.org",
+      "interests": [
+        "Data Policy",
+        "Ethics"
+      ],
+      "expertise": [
+        "Project Management",
+        "Policy Analysis"
+      ]
+    },
+    "steve": {
+      "name": "Steve McEachern",
+      "organization": "UK Data Services",
+      "email": "steve@example.org",
+      "interests": [
+        "Social Science Data",
+        "DDI"
+      ],
+      "expertise": [
+        "Data Archives",
+        "Governance"
+      ]
+    }
+  }
+}

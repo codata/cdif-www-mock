@@ -1,0 +1,20 @@
+[
+  {
+    "name": "WorldFAIR",
+    "description": "A global initiative to advance the implementation of FAIR principles across 11 different scientific domains. CDIF was a major output of the WorldFAIR technical track.",
+    "link": "https://worldfair-project.eu",
+    "logo": "/assets/images/worldfair-logo.png"
+  },
+  {
+    "name": "EOSC Future",
+    "description": "Supporting the development of the European Open Science Cloud by providing technical interoperability solutions that bridge domain-specific infrastructures.",
+    "link": "https://eoscfuture.eu",
+    "logo": "/assets/images/eosc-logo.svg"
+  },
+  {
+    "name": "Pilot Initiative",
+    "description": "A new pilot study exploring cross-domain metadata mappings in the atmospheric sciences.",
+    "link": "#",
+    "logo": ""
+  }
+]

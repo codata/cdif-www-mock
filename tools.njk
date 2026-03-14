@@ -1,0 +1,84 @@
+---
+layout: base.njk
+title: Essential Tools
+---
+
+<div class="py-24 bg-theme-bg">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="max-w-3xl mb-16">
+            <h1 class="text-4xl font-bold tracking-tight text-theme-text sm:text-5xl mb-6">{{ site.pages.tools.title }}</h1>
+            <p class="text-xl text-theme-muted leading-relaxed">
+                {{ site.pages.tools.lead }}
+            </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for tool in tools %}
+            <div class="flex flex-col bg-theme-surface/50 border border-theme-text/5 rounded-2xl p-8 hover:border-theme-accent/30 transition-all duration-300 group shadow-sm hover:shadow-xl scroll-mt-32">
+                <!-- Tool Header -->
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="flex-shrink-0 w-16 h-16 bg-white/10 rounded-xl overflow-hidden shadow-inner flex items-center justify-center p-2 group-hover:bg-white/20 transition-all duration-500">
+                        {% if tool.logo %}
+                        <img src="{{ tool.logo }}" alt="{{ tool.name }} Logo" class="max-w-full max-h-full object-contain filter group-hover:scale-110 transition-transform duration-500">
+                        {% else %}
+                        <div class="w-full h-full flex items-center justify-center text-theme-accent opacity-40 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                            </svg>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-theme-text group-hover:text-theme-accent transition-colors">{{ tool.name }}</h2>
+                        <span class="inline-block px-2 py-0.5 bg-theme-text/5 rounded text-[10px] font-bold text-theme-muted uppercase tracking-wider">{{ tool.license }}</span>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-sm text-theme-muted mb-8 leading-relaxed flex-grow italic">
+                    {{ tool.description }}
+                </p>
+
+                <!-- Actions -->
+                <div class="mt-auto pt-6 border-t border-theme-text/5 flex items-center justify-between">
+                    <a href="{{ tool.link }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-semibold text-theme-accent hover:underline decoration-2 underline-offset-4">
+                        Access Tool
+                        <svg class="ml-1 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </a>
+                    
+                    <div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 transition-opacity">
+                        <svg class="w-3 h-3 text-theme-muted" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 01-1 1zM8 16v-1a1 1 0 10-2 0v1a1 1 0 102 0zM13.243 14.858a1 1 0 101.414-1.414l-.707-.707a1 1 0 10-1.414 1.414l.707.707zM10 18a1 1 0 100-2h-1a1 1 0 100 2h1z" />
+                        </svg>
+                        <span class="text-[9px] font-bold text-theme-muted uppercase tracking-tighter">Verified</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Landscape Callout -->
+        <div class="mt-20 p-8 md:p-12 bg-theme-surface rounded-3xl border border-theme-accent/20 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-theme-accent/5 rounded-full blur-3xl -mr-32 -mt-32 transition-transform duration-700 group-hover:scale-150"></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="max-w-2xl text-center md:text-left">
+                    <h2 class="text-2xl md:text-3xl font-bold text-theme-text mb-4">Looking for something else?</h2>
+                    <p class="text-theme-muted leading-relaxed">
+                        For a comprehensive directory of standards, services, and software across all scientific domains, visit our full Landscape Site.
+                    </p>
+                </div>
+                <a href="https://landscape.cdif.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-4 bg-theme-accent text-theme-accent-fg font-bold rounded-xl shadow-lg hover:shadow-theme-accent/30 hover:-translate-y-1 transition-all">
+                    Explore the Landscape
+                    <svg class="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
