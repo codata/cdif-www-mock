@@ -10,7 +10,7 @@ CDIF is being actively implemented and tested across a wide range of projects an
 *   **Building Partnerships**: We work closely with international data organizations and research infrastructures to ensure broad alignment.
 
 <div class="mt-8">
-    <a href="/projects/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-bold rounded-none shadow-premium !text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all duration-300">
+    <a href="/projects/" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-bold rounded-none shadow-premium !text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all duration-300">
         Explore Projects & Partners
     </a>
 </div>

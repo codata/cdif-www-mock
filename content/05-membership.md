@@ -10,7 +10,7 @@ Membership in CDIF is open to individuals and organizations committed to advanci
 *   **Get in Touch**: Contact the CDIF coordinator or a Working Group chair for more information on membership and active projects.
 
 <div class="mt-8">
-    <a href="/membership/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-bold rounded-none shadow-premium !text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all duration-300">
+    <a href="/membership/" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-bold rounded-none shadow-premium !text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all duration-300">
         View Working Groups & Members
     </a>
 </div>

@@ -10,7 +10,7 @@ The development of CDIF is the result of years of international collaboration ai
 *   **A Solid Foundation**: It integrates lessons learned from early implementations and pilot projects across various scientific domains.
 
 <div class="mt-8">
-    <a href="/background/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-bold rounded-none shadow-premium !text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all duration-300">
+    <a href="/background/" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-bold rounded-none shadow-premium !text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all duration-300">
         Learn More About Our History
     </a>
 </div>
