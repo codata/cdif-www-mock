@@ -23,23 +23,39 @@ The website is built so that almost every piece of text is stored in simple **Ma
 
 ---
 
-## 🛠 Option 1: Editing Directly on GitHub (Recommended)
+## 🤖 Option 1: Using AI Agents (GitHub Copilot) - Recommended
 
-This is the easiest way to make small changes without installing anything on your computer.
+If you have access to **GitHub Copilot** (either on the GitHub website or in VS Code), you can perform updates by simply asking the AI to do the work for you. This is the **most efficient, hands-off way** to handle repetitive updates or complex data files.
+
+### How to use it:
+1.  **Open the Chat**: Look for the Copilot icon (a small robot head or sparkle) in your side panel or at the bottom of the screen.
+2.  **Give an Instruction**: Type what you want to achieve in plain English. For example:
+    *   *"Add a new event to news.json for the 'FAIR Data Symposium' happening on May 10th, 2026."*
+    *   *"Update membership.json to move Pascal Heus to the Steering Working Group."*
+    *   *"Rephrase the second paragraph of 03-profiles.md to be more concise."*
+3.  **Review and Apply**: Copilot will show you the exact code changes. You can then click **"Insert"** or **"Apply"** to update the file automatically.
+
+**Why use this?** AI agents are excellent at maintaining perfect JSON formatting (commas and braces), so you are much less likely to trigger a "Red X" error.
+
+---
+
+## 🛠 Option 2: Editing Directly on GitHub
+
+This is the easiest way to make small changes without installing anything on your computer if you prefer to edit text manually.
 
 1.  **Navigate** to the file you want to change on GitHub.
 2.  Click the **Pencil icon** (Edit this file) in the top right.
 3.  **Make your changes**. If you are editing a JSON file, be careful to keep the quotes `"` and commas `,` in place!
 4.  **Preview** your changes using the "Preview" tab if available (works for Markdown).
 5.  **Commit Changes**:
-    *   Scroll to the bottom.
-    *   Write a short summary (e.g., "Updated news for April").
-    *   Choose **"Create a new branch for this commit and start a pull request."** (This is safer than editing the main site directly).
+     *   Scroll to the bottom.
+     *   Write a short summary (e.g., "Updated news for April").
+     *   Choose **"Create a new branch for this commit and start a pull request."** (This is safer than editing the main site directly).
 6.  **Pull Request (PR)**: Click "Propose changes." A technical lead will review your change and "Merge" it, which makes it live on the website.
 
 ---
 
-## 💻 Option 2: Editing Locally (For Power Users)
+## 💻 Option 3: Editing Locally (For Power Users)
 
 If you want to see your changes exactly as they will look before publishing, follow these steps:
 
@@ -90,13 +106,11 @@ Keep the structure intact. If you miss a comma `,` at the end of a line, the sit
 
 ## 💡 Pro Tips
 
-*   **GitHub Copilot**: If you see "sparkle" icons or suggested text appearing while you type, that's Copilot! You can hit `Tab` to accept its suggestions. It's great for writing descriptions or formatting JSON lists.
+*   **AI Assistance**: Leverage **GitHub Copilot** (see Option 1) to automate updates. It can write paragraphs, format complex lists, and fix syntax errors instantly.
 *   **Images**: Put new images in `src/assets/images/`. Then refer to them as `/assets/images/filename.png` in your files.
 *   **Commits and Branches**: Think of a **Commit** as a "Save Point." Think of a **Branch** as a "Draft." Always work on a draft branch so you don't break the live site!
 
 ---
-
-## 🎨 Concrete Examples
 
 ## 🎨 Concrete Examples
 
@@ -146,8 +160,6 @@ Keep the structure intact. If you miss a comma `,` at the end of a line, the sit
 *   **Location**: `content/` folder.
 *   **Action**: Each section of the home page is its own file (e.g., `03-profiles.md`, `05-governance.md`).
 *   **Editing**: Open the file, find the text you want to change, and edit it just like a Word document. Save the file, and the update will appear in that specific section of the homepage.
-
----
 
 ---
 
