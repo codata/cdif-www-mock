@@ -201,6 +201,20 @@ To prevent accidental errors (like a missing comma in a JSON file) from breaking
 
 ---
 
+## ⏪ Rolling Back Changes
+
+If a change was merged and it broke something on the live site, don't panic! GitHub makes it very easy to "undo" a mistake.
+
+### How to Revert a Pull Request:
+1.  Go to the **"Pull requests"** tab on GitHub.
+2.  Click on the **"Closed"** list to find the update that caused the problem.
+3.  Scroll down to the bottom of that specific Pull Request.
+4.  You will see a button that says **"Revert"**. Click it.
+5.  This will create a *new* Pull Request that exactly reverses your changes.
+6.  **Merge** this new Revert PR. The site will automatically rebuild and return to its previous working state within minutes.
+
+---
+
 ## 🆘 Need Help?
 If the site stops working after an edit, check for:
 1.  Missing quotation marks in JSON.
