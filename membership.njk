@@ -30,7 +30,7 @@ title: Membership & Working Groups
         </div>
 
         <!-- Working Groups TOC -->
-        <nav class="sticky top-[80px] z-30 mb-20 py-4 bg-theme-bg/95 backdrop-blur-xl border-b border-theme-text/10 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 shadow-sm">
+        <nav class="sticky top-[80px] z-30 mb-20 py-4 bg-theme-bg/95 backdrop-blur-xl -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
             <div class="flex flex-wrap items-center gap-3">
                 {% for group in membership.workingGroups %}
                 <a href="#group-{{ loop.index }}" class="inline-flex items-center px-4 py-2 rounded-full bg-theme-surface border border-theme-text/10 text-xs font-bold text-theme-text/70 hover:bg-theme-accent hover:text-white hover:border-theme-accent hover:-translate-y-0.5 transition-all duration-300 shadow-sm">
@@ -66,7 +66,8 @@ title: Membership & Working Groups
                     </div>
 
                     <div class="lg:col-span-2">
-                        <h3 class="text-lg font-semibold text-theme-text mb-6">Group Members</h3>
+                        {% set totalMembers = (group.chair | length) + (group.cochair | length) + (group.secretary | length) + (group.member | length) + (group.observer | length) %}
+                        <h3 class="text-lg font-semibold text-theme-text mb-6">Group Members ({{ totalMembers }})</h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
                             {% set roleLabels = { "chair": "Chair", "cochair": "Co-Chair", "secretary": "Secretary", "member": "Member", "observer": "Observer" } %}
                             {% set rolesOrder = ["chair", "cochair", "secretary", "member", "observer"] %}
@@ -79,7 +80,7 @@ title: Membership & Working Groups
                                             <h4 class="text-sm font-bold text-theme-text leading-tight">{{ person.name }}</h4>
                                             <span class="flex-shrink-0 px-1.5 py-0.5 bg-theme-accent/10 text-theme-accent rounded text-[9px] font-bold uppercase">{{ roleLabels[roleSlug] }}</span>
                                         </div>
-                                        <p class="text-[11px] text-theme-text/80 mb-3 leading-tight">{{ person.organization }}</p>
+                                        <p class="text-[11px] text-theme-text/80 mb-3 leading-tight">{{ person.affiliation }}</p>
                                         
                                         <div class="flex flex-wrap gap-1 mt-auto">
                                             {% for interest in person.interests %}

@@ -12,65 +12,250 @@
       ],
       "frequency": "Monthly",
       "chair": [
-        "arofan"
+        "simon.hodson"
       ],
       "cochair": [
-        "achim"
+        "arofan.gregory"
       ],
       "secretary": [],
       "member": [
-        "pascal"
+        "flavio.rizzolo",
+        "pascal.heus",
+        "slava.tykhonov",
+        "stuart.chalk"
       ],
       "observer": []
     },
     {
-      "id": "discovery",
-      "name": "Discovery Working Group",
-      "description": "Focuses on the standards and methodologies for cross-domain resource discovery, primarily leveraging DCAT and Schema.org.",
+      "id": "access",
+      "name": "Data Access Working Group",
+      "description": "Technical group focusing on protocols and standards for data discovery and access.",
       "topics": [
-        "DCAT",
-        "Schema.org",
-        "Resource Description",
-        "Search APIs"
+        "Access Protocols",
+        "Security",
+        "Authentication"
       ],
       "frequency": "Bi-weekly",
       "chair": [
-        "achim"
+        "darren.bell"
       ],
       "cochair": [],
-      "secretary": [
-        "laura"
+      "secretary": [],
+      "member": [
+        "g.bruce.berriman",
+        "hilde.orten",
+        "carly.huitema",
+        "lauren.maxwell",
+        "mark.dietrich",
+        "michelle.quirke",
+        "richard.dennis"
       ],
-      "member": [],
       "observer": []
     },
     {
-      "id": "integration",
-      "name": "Data Integration Working Group",
-      "description": "Drives the technical guidelines for structural data integration across different domain-specific formats.",
+      "id": "ai",
+      "name": "Tools and Machine Intelligence",
+      "description": "Explores the use of CDIF for AI and machine learning readiness, ensuring data is machine-actionable for AI workflows.",
       "topics": [
-        "Mapping",
-        "Transformation",
-        "Data Models",
-        "Syntactic Interoperability"
+        "AI",
+        "Machine Actionability",
+        "Tools"
+      ],
+      "frequency": "Monthly",
+      "chair": [
+        "pascal.heus"
+      ],
+      "cochair": [],
+      "secretary": [],
+      "member": [
+        "arofan.gregory",
+        "benjamin.beuster",
+        "deirdre.lungley",
+        "joachim.wackerow",
+        "simon.hodson",
+        "slava.tykhonov",
+        "steve.richard",
+        "stuart.chalk"
+      ],
+      "observer": []
+    },
+    {
+      "id": "context",
+      "name": "Context and Provenance",
+      "description": "Dedicated to defining how context and provenance information is captured and shared across domains.",
+      "topics": [
+        "Provenance",
+        "Contextual Metadata",
+        "Lineage"
+      ],
+      "frequency": "Bi-weekly",
+      "chair": [
+        "arofan.gregory"
+      ],
+      "cochair": [
+        "steve.richard"
+      ],
+      "secretary": [],
+      "member": [
+        "donald.hobern",
+        "flavio.rizzolo",
+        "hilde.orten",
+        "carly.huitema",
+        "iseult.lynch",
+        "lauren.maxwell",
+        "lesley.wyborn",
+        "mark.dietrich",
+        "megan.wong",
+        "michelle.quirke",
+        "pier.luigi.buttigieg",
+        "simon.hodson",
+        "thomas.exner",
+        "yann.le.franc"
+      ],
+      "observer": []
+    },
+    {
+      "id": "dissemination",
+      "name": "Communications and Requirements",
+      "description": "Focuses on outreach, requirements gathering, and dissemination of CDIF results to the broader community.",
+      "topics": [
+        "Outreach",
+        "Requirements",
+        "Engagement"
+      ],
+      "frequency": "Monthly",
+      "chair": [
+        "alexandra.kokkinaki"
+      ],
+      "cochair": [
+        "mark.dietrich"
+      ],
+      "secretary": [],
+      "member": [
+        "michelle.edwards",
+        "iseult.lynch",
+        "michelle.quirke",
+        "simon.hodson",
+        "thomas.exner"
+      ],
+      "observer": []
+    },
+    {
+      "id": "editorial",
+      "name": "Editorial Team",
+      "description": "Responsible for the final review, editing, and consistency of the CDIF documentation and specifications.",
+      "topics": [
+        "Documentation",
+        "Specification Review",
+        "Technical Writing"
+      ],
+      "frequency": "As needed",
+      "chair": [
+        "arofan.gregory"
+      ],
+      "cochair": [],
+      "secretary": [],
+      "member": [
+        "alexandra.kokkinaki",
+        "doug.fils",
+        "lesley.wyborn",
+        "pier.luigi.buttigieg",
+        "simon.hodson",
+        "steve.richard"
+      ],
+      "observer": []
+    },
+    {
+      "id": "mapping",
+      "name": "Data Description and Mapping",
+      "description": "Handles the core metadata mappings and descriptions essential for cross-domain interoperability.",
+      "topics": [
+        "Metadata Mapping",
+        "Resource Description",
+        "Cross-walks"
       ],
       "frequency": "Weekly",
       "chair": [
-        "arofan"
+        "flavio.rizzolo"
       ],
-      "cochair": [
-        "steve"
-      ],
+      "cochair": [],
       "secretary": [],
-      "member": [],
+      "member": [
+        "luis.gonzalez",
+        "heike.goerzig",
+        "hilde.orten",
+        "iseult.lynch",
+        "lauren.maxwell",
+        "michelle.quirke",
+        "richard.dennis",
+        "peter.winstanley",
+        "pier.luigi.buttigieg",
+        "thomas.exner",
+        "yann.le.franc"
+      ],
+      "observer": []
+    },
+    {
+      "id": "nontext",
+      "name": "Non-Text Data Formats and Packaging",
+      "description": "Focuses on the integration of non-text data types (images, sensors, etc.) and data packaging formats.",
+      "topics": [
+        "Packaging",
+        "Non-text Data",
+        "Binary Formats"
+      ],
+      "frequency": "Monthly",
+      "chair": [],
+      "cochair": [],
+      "secretary": [],
+      "member": [
+        "donald.hobern",
+        "heike.goerzig",
+        "kelsey.druken",
+        "lesley.wyborn",
+        "mark.dietrich",
+        "thomas.exner",
+        "heinrich.widmann"
+      ],
+      "observer": []
+    },
+    {
+      "id": "semantic",
+      "name": "Semantic Technologies Implementation",
+      "description": "Providing guidance on the implementation of semantic web technologies and ontologies within the CDIF framework.",
+      "topics": [
+        "Semantics",
+        "Linked Data",
+        "Ontologies"
+      ],
+      "frequency": "Monthly",
+      "chair": [
+        "pier.luigi.buttigieg"
+      ],
+      "cochair": [],
+      "secretary": [],
+      "member": [
+        "alexandra.kokkinaki",
+        "doug.fils",
+        "peter.winstanley",
+        "thomas.exner",
+        "yann.le.franc"
+      ],
       "observer": []
     }
   ],
   "people": {
-    "arofan": {
+    "alexandra.kokkinaki": {
+      "name": "Alexandra Kokkinaki",
+      "affiliation": "NOC",
+      "email": "alexk@noc.ac.uk",
+      "interests": [],
+      "expertise": []
+    },
+    "arofan.gregory": {
       "name": "Arofan Gregory",
-      "organization": "CODATA",
-      "email": "arofan@codata.org",
+      "affiliation": "CODATA",
+      "email": "arofan@codata.org,ilg21@yahoo.com",
       "interests": [
         "Metadata Standards",
         "SDMX",
@@ -82,36 +267,144 @@
         "Standardization"
       ]
     },
-    "achim": {
-      "name": "Achim Wackerow",
-      "organization": "Independent",
-      "email": "achim@example.org",
-      "interests": [
-        "Data Engineering",
-        "Knowledge Graphs"
-      ],
+    "benjamin.beuster": {
+      "name": "Benjamin Beuster",
+      "affiliation": "Norwegian Agency for Shared Services (SIKT)",
+      "email": "benjamin.beuster@sikt.no",
+      "interests": [],
+      "expertise": []
+    },
+    "carly.huitema": {
+      "name": "Carly Huitema",
+      "affiliation": "University of Guelph",
+      "email": "huitemac@uoguelph.ca",
+      "interests": [],
+      "expertise": []
+    },
+    "dan.bri": {
+      "name": "Dan Bri",
+      "affiliation": "Danbri",
+      "email": "danbri@danbri.org",
+      "interests": [],
+      "expertise": []
+    },
+    "darren.bell": {
+      "name": "Darren Bell",
+      "affiliation": "University of Essex",
+      "email": "dbell@essex.ac.uk",
+      "interests": [],
+      "expertise": []
+    },
+    "david.jensen": {
+      "name": "David Jensen",
+      "affiliation": "United Nations",
+      "email": "david.jensen@un.org",
+      "interests": [],
+      "expertise": []
+    },
+    "deirdre.lungley": {
+      "name": "Deirdre Lungley",
+      "affiliation": "University of Essex",
+      "email": "dmlung@essex.ac.uk",
+      "interests": [],
+      "expertise": []
+    },
+    "donald.hobern": {
+      "name": "Donald Hobern",
+      "affiliation": "University of Adelaide",
+      "email": "donald.hobern@adelaide.edu.au, dhobern@gmail.com",
+      "interests": [],
+      "expertise": []
+    },
+    "doug.fils": {
+      "name": "Doug Fils",
+      "affiliation": "Fils Network",
+      "email": "doug@fils.network",
+      "interests": [],
+      "expertise": []
+    },
+    "elizabeth.lea.bishop": {
+      "name": "Elizabeth Lea Bishop",
+      "affiliation": "Icloud",
+      "email": "elizabeth.lea.bishop@icloud.com",
+      "interests": [],
+      "expertise": []
+    },
+    "flavio.rizzolo": {
+      "name": "Flavio Rizzolo",
+      "affiliation": "StatCan",
+      "email": "flavio.rizzolo@statcan.gc.ca",
+      "interests": [],
+      "expertise": []
+    },
+    "g.bruce.berriman": {
+      "name": "G. Bruce Berriman",
+      "affiliation": "IPAC",
+      "email": "gbb@ipac.caltech.edu",
+      "interests": [],
+      "expertise": []
+    },
+    "hea.lim.rhee": {
+      "name": "Hea Lim Rhee",
+      "affiliation": "KISTI",
+      "email": "rhee.healim@kisti.re.kr",
+      "interests": [],
+      "expertise": []
+    },
+    "heike.goerzig": {
+      "name": "Heike G\u00f6rzig",
+      "affiliation": "Helmholtz Berlin",
+      "email": "heike.goerzig@helmholtz-berlin.de",
+      "interests": [],
+      "expertise": []
+    },
+    "heinrich.widmann": {
+      "name": "Heinrich Widmann",
+      "affiliation": "German Climate Computing Center",
+      "email": "widmann@dkrz.de",
+      "interests": [],
+      "expertise": []
+    },
+    "hilde.orten": {
+      "name": "Hilde Orten",
+      "affiliation": "Sikt",
+      "email": "hilde.orten@sikt.no",
+      "interests": [],
+      "expertise": []
+    },
+    "isabel.ceron": {
+      "name": "Isabel Ceron",
+      "affiliation": "University of Queensland",
+      "email": "isabel.ceron@uq.edu.au",
+      "interests": [],
+      "expertise": []
+    },
+    "iseult.lynch": {
+      "name": "Iseult Lynch",
+      "affiliation": "University of Birmingham",
+      "email": "i.lynch@bham.ac.uk",
+      "interests": [],
+      "expertise": []
+    },
+    "joachim.wackerow": {
+      "name": "Joachim Wackerow",
+      "affiliation": "",
+      "email": "joachim.wackerow@posteo.de",
+      "interests": [],
       "expertise": [
-        "DCAT",
-        "Python",
-        "Cloud Architecture"
+        "DDI"
       ]
     },
-    "pascal": {
-      "name": "Pascal Heus",
-      "organization": "CODATA",
-      "email": "pascal@example.org",
-      "interests": [
-        "Data Harmonization",
-        "Software Development"
-      ],
-      "expertise": [
-        "DDI",
-        "Web Development"
-      ]
+    "kelsey.druken": {
+      "name": "Kelsey Druken",
+      "affiliation": "ANU",
+      "email": "kelsey.druken@anu.edu.au",
+      "interests": [],
+      "expertise": []
     },
-    "laura": {
+    "laura.molloy": {
       "name": "Laura Molloy",
-      "organization": "CODATA",
+      "affiliation": "CODATA",
       "email": "laura@example.org",
       "interests": [
         "Data Policy",
@@ -122,9 +415,134 @@
         "Policy Analysis"
       ]
     },
-    "steve": {
+    "lauren.maxwell": {
+      "name": "Lauren Maxwell",
+      "affiliation": "Heidelberg University",
+      "email": "lauren.maxwell@uni-heidelberg.de",
+      "interests": [],
+      "expertise": []
+    },
+    "lesley.wyborn": {
+      "name": "Lesley Wyborn",
+      "affiliation": "ANU",
+      "email": "lesley.wyborn@anu.edu.au",
+      "interests": [],
+      "expertise": []
+    },
+    "luis.gonzalez": {
+      "name": "Luis Gonzalez",
+      "affiliation": "United Nations",
+      "email": "gonzalezmorales@un.org",
+      "interests": [],
+      "expertise": []
+    },
+    "mark.dietrich": {
+      "name": "Mark Dietrich",
+      "affiliation": "EGI",
+      "email": "mark.dietrich@egi.eu",
+      "interests": [],
+      "expertise": []
+    },
+    "megan.wong": {
+      "name": "Megan Wong",
+      "affiliation": "ARDC",
+      "email": "megan.wong@ardc.edu.au",
+      "interests": [],
+      "expertise": []
+    },
+    "michelle.edwards": {
+      "name": "Michelle Edwards",
+      "affiliation": "University of Guelph",
+      "email": "edwardsm@uoguelph.ca",
+      "interests": [],
+      "expertise": []
+    },
+    "michelle.quirke": {
+      "name": "Michelle Quirke",
+      "affiliation": "Iu",
+      "email": "mvquirke@iu.edu",
+      "interests": [],
+      "expertise": []
+    },
+    "pascal.heus": {
+      "name": "Pascal Heus",
+      "affiliation": "CODATA",
+      "email": "pascal@codata.org",
+      "interests": [
+        "Data Harmonization",
+        "Software Development"
+      ],
+      "expertise": [
+        "DDI",
+        "Web Development"
+      ]
+    },
+    "peter.winstanley": {
+      "name": "Peter Winstanley",
+      "affiliation": "Semantic Arts",
+      "email": "peter.winstanley@semanticarts.com",
+      "interests": [],
+      "expertise": []
+    },
+    "pier.luigi.buttigieg": {
+      "name": "Pier-Luigi Buttigieg",
+      "affiliation": "AWI",
+      "email": "pier.buttigieg@awi.de",
+      "interests": [],
+      "expertise": []
+    },
+    "rebecca.farrington": {
+      "name": "Rebecca Farrington",
+      "affiliation": "AuScope",
+      "email": "rebecca@auscope.org.au",
+      "interests": [],
+      "expertise": []
+    },
+    "richard.dennis": {
+      "name": "Richard Dennis",
+      "affiliation": "Yahoo",
+      "email": "pacian@yahoo.com",
+      "interests": [],
+      "expertise": []
+    },
+    "richard.dennis1": {
+      "name": "Richard Dennis",
+      "affiliation": "University of Copenhagen",
+      "email": "richard.dennis@sund.ku.dk",
+      "interests": [],
+      "expertise": []
+    },
+    "rtleyb": {
+      "name": "rtleyb",
+      "affiliation": "Independent",
+      "email": "rtleyb@icloud.com, rtleyb@pm.me",
+      "interests": [],
+      "expertise": []
+    },
+    "shawn.ross": {
+      "name": "Shawn Ross",
+      "affiliation": "ARDC",
+      "email": "shawn.ross@ardc.edu.au",
+      "interests": [],
+      "expertise": []
+    },
+    "simon.hodson": {
+      "name": "Simon Hodson",
+      "affiliation": "CODATA",
+      "email": "simon@codata.org",
+      "interests": [],
+      "expertise": []
+    },
+    "slava.tykhonov": {
+      "name": "Slava Tykhonov",
+      "affiliation": "CODATA",
+      "email": "slava@codata.org",
+      "interests": [],
+      "expertise": []
+    },
+    "steve.mceachern": {
       "name": "Steve McEachern",
-      "organization": "UK Data Services",
+      "affiliation": "UK Data Services",
       "email": "steve@example.org",
       "interests": [
         "Social Science Data",
@@ -134,6 +552,34 @@
         "Data Archives",
         "Governance"
       ]
+    },
+    "steve.richard": {
+      "name": "Steve Richard",
+      "affiliation": "Freelance",
+      "email": "smrtucson@gmail.com",
+      "interests": [],
+      "expertise": []
+    },
+    "stuart.chalk": {
+      "name": "Stuart Chalk",
+      "affiliation": "University of North Florida",
+      "email": "schalk@unf.edu",
+      "interests": [],
+      "expertise": []
+    },
+    "thomas.exner": {
+      "name": "Thomas Exner",
+      "affiliation": "Seven Past Nine",
+      "email": "thomas.exner@sevenpastnine.com",
+      "interests": [],
+      "expertise": []
+    },
+    "yann.le.franc": {
+      "name": "Yann Le Franc",
+      "affiliation": "EScience Factory",
+      "email": "ylefranc@esciencefactory.com",
+      "interests": [],
+      "expertise": []
     }
   }
 }
