@@ -1,5 +1,13 @@
 [
   {
+    "id": "event-20260401",
+    "type": "event",
+    "title": "FAIR Data Symposium 2026",
+    "date": "2026-04-01",
+    "summary": "CDIF Website edit session.",
+    "link": "https://fair-symposium.org",
+    "tags": ["CODATA", "CDIF"]
+  },
     "id": "event-2",
     "type": "event",
     "title": "FAIR Data Symposium 2026",
