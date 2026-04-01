@@ -51,7 +51,7 @@ The site is driven by a hybrid architecture of dynamic Markdown files and struct
 
 ## 🛠 Technical Stack
 - **Static Site Generator:** [11ty (Eleventy) v3.0](https://www.11ty.dev/) utilizing the `HtmlBasePlugin` for sub-directory hosting support.
-- **Styling:** [Tailwind CSS v4.0](https://tailwindcss.com/) with the Typography plugin.
+- **Styling:** [Tailwind CSS v4.0](https://tailwindcss.com/) with the Typography plugin. 
 - **Interactivity:** [Alpine.js](https://alpinejs.dev/) & [Alpine Persist Plugin](https://alpinejs.dev/plugins/persist).
 - **Data Engine:** JSON-driven global and specialized data objects in `src/_data/`.
 - **Deployment:** GitHub Actions (`.github/workflows/deploy.yml`) explicitly targeting **GitHub Pages** continuous deployment environments upon changes to the `main` branch.
