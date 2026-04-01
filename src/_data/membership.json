@@ -1,9 +1,9 @@
 {
   "workingGroups": [
     {
-      "id": "advisory",
-      "name": "Advisory Group",
-      "description": "The Advisory Group provides overall strategic direction and oversight for the CDIF framework and its evolution.",
+      "id": "CDIFWG",
+      "name": "Full Working Group",
+      "description": "The Working Group provides overall strategic direction and oversight for the CDIF framework and its evolution.",
       "topics": [
         "Strategy",
         "Governance",
@@ -25,6 +25,31 @@
         "stuart.chalk"
       ],
       "observer": []
+    },
+        {
+          "id": "editorial",
+          "name": "Editorial Team",
+          "description": "Responsible for the final review, editing, and consistency of the CDIF documentation and specifications.",
+          "topics": [
+            "Documentation",
+            "Specification Review",
+            "Technical Writing"
+          ],
+          "frequency": "As needed",
+          "chair": [
+            "arofan.gregory"
+          ],
+          "cochair": [],
+          "secretary": [],
+          "member": [
+            "alexandra.kokkinaki",
+            "doug.fils",
+            "lesley.wyborn",
+            "pier.luigi.buttigieg",
+            "simon.hodson",
+            "steve.richard"
+          ],
+          "observer": []
     },
     {
       "id": "access",
@@ -52,33 +77,7 @@
       ],
       "observer": []
     },
-    {
-      "id": "ai",
-      "name": "Tools and Machine Intelligence",
-      "description": "Explores the use of CDIF for AI and machine learning readiness, ensuring data is machine-actionable for AI workflows.",
-      "topics": [
-        "AI",
-        "Machine Actionability",
-        "Tools"
-      ],
-      "frequency": "Monthly",
-      "chair": [
-        "pascal.heus"
-      ],
-      "cochair": [],
-      "secretary": [],
-      "member": [
-        "arofan.gregory",
-        "benjamin.beuster",
-        "deirdre.lungley",
-        "joachim.wackerow",
-        "simon.hodson",
-        "slava.tykhonov",
-        "steve.richard",
-        "stuart.chalk"
-      ],
-      "observer": []
-    },
+
     {
       "id": "context",
       "name": "Context and Provenance",
@@ -114,57 +113,8 @@
       ],
       "observer": []
     },
-    {
-      "id": "dissemination",
-      "name": "Communications and Requirements",
-      "description": "Focuses on outreach, requirements gathering, and dissemination of CDIF results to the broader community.",
-      "topics": [
-        "Outreach",
-        "Requirements",
-        "Engagement"
-      ],
-      "frequency": "Monthly",
-      "chair": [
-        "alexandra.kokkinaki"
-      ],
-      "cochair": [
-        "mark.dietrich"
-      ],
-      "secretary": [],
-      "member": [
-        "michelle.edwards",
-        "iseult.lynch",
-        "michelle.quirke",
-        "simon.hodson",
-        "thomas.exner"
-      ],
-      "observer": []
-    },
-    {
-      "id": "editorial",
-      "name": "Editorial Team",
-      "description": "Responsible for the final review, editing, and consistency of the CDIF documentation and specifications.",
-      "topics": [
-        "Documentation",
-        "Specification Review",
-        "Technical Writing"
-      ],
-      "frequency": "As needed",
-      "chair": [
-        "arofan.gregory"
-      ],
-      "cochair": [],
-      "secretary": [],
-      "member": [
-        "alexandra.kokkinaki",
-        "doug.fils",
-        "lesley.wyborn",
-        "pier.luigi.buttigieg",
-        "simon.hodson",
-        "steve.richard"
-      ],
-      "observer": []
-    },
+  
+
     {
       "id": "mapping",
       "name": "Data Description and Mapping",
@@ -190,54 +140,6 @@
         "richard.dennis",
         "peter.winstanley",
         "pier.luigi.buttigieg",
-        "thomas.exner",
-        "yann.le.franc"
-      ],
-      "observer": []
-    },
-    {
-      "id": "nontext",
-      "name": "Non-Text Data Formats and Packaging",
-      "description": "Focuses on the integration of non-text data types (images, sensors, etc.) and data packaging formats.",
-      "topics": [
-        "Packaging",
-        "Non-text Data",
-        "Binary Formats"
-      ],
-      "frequency": "Monthly",
-      "chair": [],
-      "cochair": [],
-      "secretary": [],
-      "member": [
-        "donald.hobern",
-        "heike.goerzig",
-        "kelsey.druken",
-        "lesley.wyborn",
-        "mark.dietrich",
-        "thomas.exner",
-        "heinrich.widmann"
-      ],
-      "observer": []
-    },
-    {
-      "id": "semantic",
-      "name": "Semantic Technologies Implementation",
-      "description": "Providing guidance on the implementation of semantic web technologies and ontologies within the CDIF framework.",
-      "topics": [
-        "Semantics",
-        "Linked Data",
-        "Ontologies"
-      ],
-      "frequency": "Monthly",
-      "chair": [
-        "pier.luigi.buttigieg"
-      ],
-      "cochair": [],
-      "secretary": [],
-      "member": [
-        "alexandra.kokkinaki",
-        "doug.fils",
-        "peter.winstanley",
         "thomas.exner",
         "yann.le.franc"
       ],
