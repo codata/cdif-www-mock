@@ -14,7 +14,7 @@
   --color-theme-muted: #334155;
   --color-theme-accent: #0f172a;
   --color-theme-accent-fg: #ffffff;
-  --font-sans: 'Space Grotesk', sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --radius-theme: 0px;
 }
 
