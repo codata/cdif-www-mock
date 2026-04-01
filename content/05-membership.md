@@ -1,5 +1,5 @@
 ---
-title: Membership
+title: Groups
 order: 5
 ---
 
