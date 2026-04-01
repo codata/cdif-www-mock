@@ -1,5 +1,14 @@
 [
   {
+    "id": "event-2026041",
+    "type": "event",
+    "title": "April's fools",
+    "date": "2026-04-01",
+    "summary": "I love fish.",
+    "link": "https://codata.org/events/cdif-website-maintenance-workshop",
+    "tags": ["Workshop", "Website", "Maintenance"]
+  },
+  {
     "id": "event-3",
     "type": "event",
     "title": "Workshop: CDIF Website Maintenance",
