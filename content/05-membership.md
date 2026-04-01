@@ -3,10 +3,11 @@ title: Groups
 order: 5
 ---
 
-Membership in CDIF is open to individuals and organizations committed to advancing cross-domain data interoperability.
+Participation in CDIF is open to individuals and organizations committed to advancing cross-domain data interoperability.
 
-*   **Working Group Based**: Participation typically happens through our specialized Working Groups, where members represent major research projects or data organizations.
-*   **How to Join**: Anyone interested in contributing to the framework can express interest in joining a working group. 
+*   **Working Group Based**: Participation typically happens through our specialized Working Groups on a number of topics to advance CDIF.
+*   **Joint the CDIF Community**: Joint the CDIF Community to receive regular news and be invited to meetings and webinars.
+*   **How to Join**: Anyone interested in contributing to CDIF can express interest in joining a working group. 
 *   **Get in Touch**: Contact the CDIF coordinator or a Working Group chair for more information on membership and active projects.
 
 <div class="mt-8">
