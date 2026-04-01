@@ -20,7 +20,7 @@ The website is built so that almost every piece of text is stored in simple **Ma
 | **Add/Edit Projects** | `src/_data/projects.json` | JSON |
 | **Add/Edit Strategic Partners** | `src/_data/partners.json` | JSON |
 | **Update the History Timeline** | `src/_data/timeline.json` | JSON |
-| **Manage Working Groups/Members** | `src/_data/membership.json` | JSON |
+| **Manage Working Groups/Members** | `src/_data/groups.json` | JSON |
 | **Home Page Narrative Content** | `content/` folder | Markdown |
 
 ---
@@ -36,7 +36,7 @@ If you have access to **GitHub Copilot** (either on the GitHub website or in VS 
 1.  **Open the Chat**: Look for the Copilot icon (a small robot head or sparkle) in your side panel or at the bottom of the screen.
 2.  **Give an Instruction**: Type what you want to achieve in plain English. For example:
     *   *"Add a new event to news.json for the 'FAIR Data Symposium' happening on May 10th, 2026."*
-    *   *"Update membership.json to move Pascal Heus to the Steering Working Group."*
+    *   *"Update groups.json to move Pascal Heus to the Steering Working Group."*
     *   *"Rephrase the second paragraph of 03-profiles.md to be more concise."*
 3.  **Review and Apply**: Copilot will show you the exact code changes. You can then click **"Insert"** or **"Apply"** to update the file automatically.
 
@@ -154,7 +154,7 @@ Keep the structure intact. If you miss a comma `,` at the end of a line, the sit
     ```
 
 ### 4. Managing Working Groups & Members
-*   **File**: `src/_data/membership.json`
+*   **File**: `src/_data/groups.json`
 *   **Adding a Person**: Add them to the `"people"` object first with their details.
 *   **Assigning Roles**: Find the group in `"workingGroups"` and add the person's ID (e.g., `"jane-doe"`) to the correct role array: `"chair"`, `"cochair"`, `"secretary"`, `"member"`, or `"observer"`.
     ```json

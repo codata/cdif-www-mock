@@ -30,8 +30,8 @@
         "title": "Strategic Partners"
       }
     },
-    "membership": {
-      "title": "Membership & Working Groups",
+    "groups": {
+      "title": "Working Groups",
       "lead": "Participation in CDIF is driven by our specialized Working Groups. Members typically represent organizations or major research projects committed to cross-domain interoperability.",
       "join": {
         "title": "Interested in Joining?",
@@ -55,8 +55,8 @@
     "links": {
       "framework": [
         {
-          "text": "Membership & WGs",
-          "url": "/membership/"
+          "text": "Groups",
+          "url": "/groups/"
         },
         {
           "text": "History & Background",

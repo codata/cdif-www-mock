@@ -37,7 +37,7 @@ The site is driven by a hybrid architecture of dynamic Markdown files and struct
     - **Timeline:** `timeline.json` (Development milestones).
     - **Projects:** `projects.json` (Profiles and external links).
     - **Partners:** `partners.json` (Strategic organizational partners).
-    - **Membership:** `membership.json` (Working groups, members, and roles).
+    - **Groups:** `groups.json` (Working groups, members, and roles).
     - **News & Events:** `news.json` (Latest updates and ticker items).
 - **Rich Content Preference:** For multiline text, articles, or any content requiring rich formatting (bolding, lists, links), **Markdown (.md) MUST be preferred** over JSON to ensure ease of editing and proper rendering.
 
@@ -45,7 +45,7 @@ The site is driven by a hybrid architecture of dynamic Markdown files and struct
 1. **Header:** Responsive Glassmorphism bar with logo, smooth-scroll navigation, mobile hamburger menu, and discrete Theme/Hero Background switchers. Navigation is built from `site.json` and Markdown `order`.
 2. **Hero (`01-hero.md`):** High-impact introduction to CDIF with a dedicated "CDIF Book" visual card, dynamic badges, and clear call-to-action buttons. UI strings are managed in `site.json`.
 3. **Information Modules (`02` through `11`):** Atomic Markdown files in the `content/` folder providing the main vertical scroll content (Mission, Profiles, Governance, Tools, etc.).
-4. **Sub-Pages:** Dedicated templates (`background.njk`, `projects.njk`, `membership.njk`, `news-events.njk`) that combine Markdown intro blurbs with structured JSON data.
+4. **Sub-Pages:** Dedicated templates (`background.njk`, `projects.njk`, `groups.njk`, `news-events.njk`) that combine Markdown intro blurbs with structured JSON data.
 5. **Legal & Privacy:** Fully styled external Markdown files (`privacy.md`, `terms.md`) wrapping legal documentation.
 6. **Footer:** Comprehensive site footer driven by `site.json` with external resource links and CODATA attribution.
 
