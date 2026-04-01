@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "CODATA Cross-Domain Information Framework Website",
   "scripts": {
-    "prestart": "mkdir -p _site/assets/css",
+    "prestart": "node -e \"require('fs').mkdirSync('_site/assets/css', { recursive: true })\"",
     "start": "npm-run-all -p dev:*",
     "dev:11ty": "eleventy --serve --watch",
     "dev:tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./_site/assets/css/style.css --watch",
-    "prebuild": "mkdir -p _site/assets/css",
+    "prebuild": "node -e \"require('fs').mkdirSync('_site/assets/css', { recursive: true })\"",
     "build": "npm-run-all -s build:*",
     "build:eleventy": "eleventy",
     "build:tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./_site/assets/css/style.css --minify",
