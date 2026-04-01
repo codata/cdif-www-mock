@@ -9,18 +9,18 @@
     "name": "EOSC Future (2021 - 2024)",
     "description": "Supporting the development of the European Open Science Cloud by providing technical interoperability solutions that bridge domain-specific infrastructures.",
     "link": "https://eoscfuture.eu",
-    "logo": "/assets/images/eosc-logo.svg"
+    "logo": "/assets/images/eosc-future-logo.svg"
   },
   {
     "name": "Climate-Adapt4EOSC (2025 - 2028)",
     "description": "Enable the integration of heterogeneous datasets — from climate and hydrology to socio-economic domains — ensuring they are FAIR and machine-actionable",
     "link": "https://climate-adapt4eosc.eu/",
-    "logo": ""
+    "logo": "/assets/images/eosc-climateadapt-logo.png"
   },
   {
     "name": "TOGETHER (2025 - 2028)",
     "description": "The project is developing a toolkit that includes data-sharing frameworks, an AI-powered system for actionable insights, and governance solutions that improve coordination. Tested in innovation hubs in Greece, Norway, Portugal, Spain, and Türkiye, the project’s solutions aim to enhance inclusive, efficient disaster risk management for a safer, more prepared future.",
     "link": "https://together-euproject.eu/",
-    "logo": ""
+    "logo": "/assets/images/together-logo.webp"
   }
 ]
