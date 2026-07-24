@@ -36,6 +36,8 @@
       "join": {
         "title": "Interested in Joining?",
         "description": "We welcome contributions from individuals and organizations across all scientific domains. Express your interest in joining a working group today.",
+        "joinCta": "Join",
+        "joinUrl": "/join",
         "cta": "Contact Us",
         "email": "mailto:members@cdif.org"
       }

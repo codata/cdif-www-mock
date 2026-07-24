@@ -20,12 +20,20 @@ permalink: /groups/
                     
                     <h2 class="text-xl font-bold text-theme-text mb-3 relative z-10">{{ site.pages.groups.join.title }}</h2>
                     <p class="text-sm text-theme-muted mb-6 relative z-10">{{ site.pages.groups.join.description }}</p>
-                    <a href="{{ site.pages.groups.join.email }}" class="relative z-10 inline-flex items-center px-6 py-2.5 text-sm font-bold rounded-full text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all shadow-md hover:-translate-y-0.5">
-                        {{ site.pages.groups.join.cta }}
-                        <svg class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                    </a>
+                    <div class="relative z-10 flex flex-wrap items-center gap-3">
+                        <a href="{{ site.pages.groups.join.joinUrl }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-2.5 text-sm font-bold rounded-full text-theme-accent-fg bg-theme-accent hover:bg-theme-accent/90 transition-all shadow-md hover:-translate-y-0.5">
+                            {{ site.pages.groups.join.joinCta }}
+                            <svg class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                        <a href="{{ site.pages.groups.join.email }}" class="inline-flex items-center px-6 py-2.5 text-sm font-bold rounded-full text-theme-text bg-theme-surface border border-theme-text/15 hover:bg-theme-surface/80 hover:border-theme-accent/40 transition-all shadow-sm hover:-translate-y-0.5">
+                            {{ site.pages.groups.join.cta }}
+                            <svg class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
