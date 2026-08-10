@@ -90,6 +90,22 @@ permalink: /groups/
                                             <span class="flex-shrink-0 px-1.5 py-0.5 bg-theme-accent/10 text-theme-accent rounded text-[9px] font-bold uppercase">{{ roleLabels[roleSlug] }}</span>
                                         </div>
                                         <p class="text-[11px] text-theme-text/80 mb-3 leading-tight">{{ person.affiliation }}</p>
+
+                                        {% if person.countryOfResidence %}
+                                        <p class="text-[10px] font-medium text-theme-muted mb-2 flex items-center gap-1">
+                                            {{ person.countryOfResidence }}
+                                        </p>
+                                        {% endif %}
+
+                                        {% if person.areaOfExpertise and person.areaOfExpertise.length %}
+                                        <div class="flex flex-wrap gap-1 mb-2">
+                                            {% for exp in person.areaOfExpertise %}
+                                            <span class="px-1.5 py-0.5 bg-theme-accent/10 text-theme-accent rounded text-[9px] font-semibold">
+                                                {{ exp }}
+                                            </span>
+                                            {% endfor %}
+                                        </div>
+                                        {% endif %}
                                         
                                         <div class="flex flex-wrap gap-1 mt-auto">
                                             {% for interest in person.interests %}
