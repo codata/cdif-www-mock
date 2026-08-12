@@ -1,521 +1,863 @@
 {
   "workingGroups": [
     {
-      "id": "CDIFWG",
-      "name": "Full Working Group",
-      "description": "The Working Group provides overall strategic direction and oversight for the CDIF framework and its evolution.",
+      "id": "provenance",
+      "name": "Provenance",
+      "description": "to be determined",
       "topics": [
-        "Strategy",
-        "Governance",
-        "Strategic Partnerships",
-        "Resource Allocation"
+        "to be determined"
       ],
-      "frequency": "Monthly",
-      "chair": [
-        "simon.hodson"
-      ],
-      "cochair": [
-        "arofan.gregory"
-      ],
-      "secretary": [],
-      "member": [
-    "alexandra.kokkinaki", 
-    "dan.bri", 
-    "david.jensen", 
-    "darren.bell", 
-    "donald.hobern", 
-    "deirdre.lungley", 
-    "doug.fils", 
-    "michelle.edwards", 
-    "elizabeth.lea.bishop", 
-    "flavio.rizzolo",
-     "g.bruce.berriman", 
-    "luis.gonzalez", 
-    "hector.ponce", 
-    "heike.goerzig", 
-    "hilde.orten", 
-    "carly.huitema",
-    "iseult.lynch", 
-    "isabel.ceron", 
-    "kelsey.druken",
-     "lauren.maxwell", 
-    "lesley.wyborn", 
-    "mark.dietrich", 
-    "megan.wong", 
-    "michelle.quirke", 
-    "richard.dennis", 
-    "pascal.heus", 
-    "pier.luigi.buttigieg", 
-    "hea.lim.rhee",
-     "steve.richard", 
-    "thomas.exner", 
-    "yann.le.franc"
-      ],
-      "observer": []
-    },
-        {
-          "id": "editorial",
-          "name": "Editorial Team",
-          "description": "Responsible for the final review, editing, and consistency of the CDIF documentation and specifications.",
-          "topics": [
-            "Documentation",
-            "Specification Review",
-            "Technical Writing"
-          ],
-          "frequency": "As needed",
-          "chair": [
-            "arofan.gregory"
-          ],
-          "cochair": [],
-          "secretary": [],
-          "member": [
-            "alexandra.kokkinaki",
-            "doug.fils",
-            "lesley.wyborn",
-            "pier.luigi.buttigieg",
-            "simon.hodson",
-            "steve.richard"
-          ],
-          "observer": []
-    },
-    {
-      "id": "access",
-      "name": "Data Access Working Group",
-      "description": "Technical group focusing on protocols and standards for data discovery and access.",
-      "topics": [
-        "Access Protocols",
-        "Security",
-        "Authentication"
-      ],
-      "frequency": "Bi-weekly",
-      "chair": [
-        "darren.bell"
-      ],
+      "frequency": "to be determined",
+      "chair": [],
       "cochair": [],
       "secretary": [],
-      "member": [
-        "g.bruce.berriman",
-        "hilde.orten",
-        "carly.huitema",
-        "lauren.maxwell",
-        "mark.dietrich",
-        "michelle.quirke",
-        "richard.dennis"
-      ],
-      "observer": []
-    },
-
-    {
-      "id": "context",
-      "name": "Context and Provenance",
-      "description": "Dedicated to defining how context and provenance information is captured and shared across domains.",
-      "topics": [
-        "Provenance",
-        "Contextual Metadata",
-        "Lineage"
-      ],
-      "frequency": "Bi-weekly",
-      "chair": [
-        "arofan.gregory"
-      ],
-      "cochair": [
-        "steve.richard"
-      ],
-      "secretary": [],
-      "member": [
-        "donald.hobern",
-        "flavio.rizzolo",
-        "hilde.orten",
-        "carly.huitema",
-        "iseult.lynch",
-        "lauren.maxwell",
-        "lesley.wyborn",
-        "mark.dietrich",
-        "megan.wong",
-        "michelle.quirke",
-        "pier.luigi.buttigieg",
-        "simon.hodson",
+      "members": [
+        "matti.heikkurinen",
+        "dorothea.iglezakis",
         "thomas.exner",
-        "yann.le.franc"
-      ],
-      "observer": []
+        "lesley.wyborn",
+        "simon.cox",
+        "jay.greenfield",
+        "raymond.obuch",
+        "donald.hobern",
+        "lisa.griffith",
+        "alexandra.kokkinaki",
+        "sachin.pandey",
+        "flavio.rizzolo",
+        "franck.cotton",
+        "alina.mierlus",
+        "martina.stockhause",
+        "ivana.ivanova",
+        "douglas.fils",
+        "lauren.maxwell",
+        "javier.cruz",
+        "stephen.richard",
+        "abraham.nieva.de.la.hidalga",
+        "yann.le.franc",
+        "milan.ojstersek",
+        "marcin.wichorowski",
+        "slava.tykhonov",
+        "leandro.liborio",
+        "pier.luigi.buttigieg",
+        "megan.wong",
+        "david.linke",
+        "carly.huitema",
+        "iseult.lynch"
+      ]
     },
-  
-
+    {
+      "id": "access-rights",
+      "name": "Access Rights",
+      "description": "to be determined",
+      "topics": [
+        "to be determined"
+      ],
+      "frequency": "to be determined",
+      "chair": [],
+      "cochair": [],
+      "secretary": [],
+      "members": [
+        "matti.heikkurinen",
+        "deirdre.lungley",
+        "steven.mceachern",
+        "felix.emeka.anyiam",
+        "thomas.exner",
+        "darren.bell",
+        "lauren.maxwell",
+        "javier.cruz",
+        "milan.ojstersek",
+        "slava.tykhonov"
+      ]
+    },
+    {
+      "id": "catalogued-packaging",
+      "name": "Catalogued Packaging",
+      "description": "to be determined",
+      "topics": [
+        "to be determined"
+      ],
+      "frequency": "to be determined",
+      "chair": [],
+      "cochair": [],
+      "secretary": [],
+      "members": [
+        "richard.dennis",
+        "lesley.wyborn",
+        "jay.greenfield",
+        "donald.hobern",
+        "heinrich.widmann",
+        "franck.cotton",
+        "martina.stockhause",
+        "stephen.richard",
+        "milan.ojstersek",
+        "slava.tykhonov",
+        "leandro.liborio",
+        "pier.luigi.buttigieg",
+        "aileen.day"
+      ]
+    },
     {
       "id": "mapping",
-      "name": "Data Description and Mapping",
-      "description": "Handles the core metadata mappings and descriptions essential for cross-domain interoperability.",
+      "name": "Mapping",
+      "description": "to be determined",
       "topics": [
-        "Metadata Mapping",
-        "Resource Description",
-        "Cross-walks"
+        "to be determined"
       ],
-      "frequency": "Weekly",
-      "chair": [
-        "flavio.rizzolo"
-      ],
+      "frequency": "to be determined",
+      "chair": [],
       "cochair": [],
       "secretary": [],
-      "member": [
-        "luis.gonzalez",
-        "heike.goerzig",
-        "hilde.orten",
-        "iseult.lynch",
-        "lauren.maxwell",
-        "michelle.quirke",
+      "members": [
+        "deirdre.lungley",
         "richard.dennis",
-        "peter.winstanley",
+        "flavio.rizzolo",
+        "hea.lim.rhee",
+        "stuart.chalk",
+        "alvaro.paredes.l",
+        "sukhdeep.kaur",
+        "noemi.betancort",
+        "douglas.fils",
+        "javier.cruz",
+        "abraham.nieva.de.la.hidalga",
+        "pierre.antoine.champin",
+        "yann.le.franc",
+        "milan.ojstersek",
+        "marcin.wichorowski",
+        "slava.tykhonov",
         "pier.luigi.buttigieg",
-        "thomas.exner",
-        "yann.le.franc"
+        "david.amadi",
+        "jindrich.fejfar"
+      ]
+    },
+    {
+      "id": "context",
+      "name": "Context",
+      "description": "to be determined",
+      "topics": [
+        "to be determined"
       ],
-      "observer": []
+      "frequency": "to be determined",
+      "chair": [],
+      "cochair": [],
+      "secretary": [],
+      "members": [
+        "beth.knazook",
+        "lesley.wyborn",
+        "simon.cox",
+        "jay.greenfield",
+        "raymond.obuch",
+        "donald.hobern",
+        "alexandra.kokkinaki",
+        "alina.mierlus",
+        "stuart.chalk",
+        "alvaro.paredes.l",
+        "karen.jacqueline.cloete",
+        "douglas.fils",
+        "javier.cruz",
+        "stephen.richard",
+        "abraham.nieva.de.la.hidalga",
+        "brian.matthews",
+        "yann.le.franc",
+        "milan.ojstersek",
+        "slava.tykhonov",
+        "leandro.liborio",
+        "pier.luigi.buttigieg",
+        "megan.wong",
+        "david.linke",
+        "carly.huitema",
+        "iseult.lynch",
+        "rodrigo.roa",
+        "jindrich.fejfar",
+        "ilona.trtikova"
+      ]
+    },
+    {
+      "id": "software",
+      "name": "Software",
+      "description": "to be determined",
+      "topics": [
+        "to be determined"
+      ],
+      "frequency": "to be determined",
+      "chair": [],
+      "cochair": [],
+      "secretary": [],
+      "members": [
+        "matti.heikkurinen",
+        "pascal.heus",
+        "deirdre.lungley",
+        "richard.dennis",
+        "sachin.pandey",
+        "stuart.chalk",
+        "natalie.meyers",
+        "abraham.nieva.de.la.hidalga",
+        "milan.ojstersek",
+        "marcin.wichorowski",
+        "slava.tykhonov",
+        "leandro.liborio",
+        "hector.perez.ponce"
+      ]
+    },
+    {
+      "id": "quality",
+      "name": "Quality",
+      "description": "to be determined",
+      "topics": [
+        "to be determined"
+      ],
+      "frequency": "to be determined",
+      "chair": [],
+      "cochair": [],
+      "secretary": [],
+      "members": [
+        "matti.heikkurinen",
+        "steven.mceachern",
+        "thomas.exner",
+        "richard.dennis",
+        "lesley.wyborn",
+        "raymond.obuch",
+        "alexandra.kokkinaki",
+        "sachin.pandey",
+        "ivana.ivanova",
+        "lauren.maxwell",
+        "natalie.meyers",
+        "brian.matthews",
+        "milan.ojstersek",
+        "marcin.wichorowski",
+        "slava.tykhonov",
+        "iseult.lynch",
+        "rodrigo.roa",
+        "ilona.trtikova"
+      ]
     }
   ],
   "people": {
-    "alexandra.kokkinaki": {
-      "name": "Alexandra Kokkinaki",
-      "affiliation": "NOC",
-      "email": "alexk@noc.ac.uk",
-      "interests": [],
-      "expertise": []
-    },
-    "arofan.gregory": {
-      "name": "Arofan Gregory",
-      "affiliation": "CODATA",
-      "email": "arofan@codata.org,ilg21@yahoo.com",
-      "interests": [
-        "Metadata Standards",
-        "SDMX",
-        "DDI",
-        "FAIR"
-      ],
-      "expertise": [
-        "Information Architecture",
-        "Standardization"
+    "abraham.nieva.de.la.hidalga": {
+      "name": "Abraham Nieva de la Hidalga",
+      "email": "nievadelahidalgaa@cardiff.ac.uk",
+      "affiliation": "Cardiff University",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "Data Management",
+        "Research Infrastructures"
       ]
     },
-    "benjamin.beuster": {
-      "name": "Benjamin Beuster",
-      "affiliation": "Norwegian Agency for Shared Services (SIKT)",
-      "email": "benjamin.beuster@sikt.no",
-      "interests": [],
-      "expertise": []
+    "aileen.day": {
+      "name": "Aileen Day",
+      "email": "a.e.day@soton.ac.uk",
+      "affiliation": "PSDI / University of Southampton",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "Metadata",
+        "Materials Sciences",
+        "Chemistry",
+        "Databases"
+      ]
+    },
+    "alexandra.kokkinaki": {
+      "name": "Alexandra Kokkinaki",
+      "email": "alexk@noc.ac.uk",
+      "affiliation": "National Oceanography Centre, British Oceanographic Data Centre",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": ["Semantics and Standards"]
+    },
+    "alina.mierlus": {
+      "name": "Alina Mierlus",
+      "email": "mierlus@gmail.com",
+      "affiliation": "",
+      "countryOfResidence": "Spain",
+      "areaOfExpertise": [
+        "Epistemology and Philosophy of Language",
+        "Working Knowledge of Data Science",
+        "ML/AI",
+        "Semantic Web",
+        "Web Programming and Open Tools"
+      ]
+    },
+    "alvaro.paredes.l": {
+      "name": "Álvaro Paredes L.",
+      "email": "alvaro.paredes@dataobservatory.net",
+      "affiliation": "Data Observatory",
+      "countryOfResidence": "Chile",
+      "areaOfExpertise": [
+        "Data Engineering",
+        "AI"
+      ]
+    },
+    "beth.knazook": {
+      "name": "Beth Knazook",
+      "email": "b.knazook@ria.ie",
+      "affiliation": "Digital Repository of Ireland",
+      "countryOfResidence": "Ireland",
+      "areaOfExpertise": [
+        "Cultural Heritage",
+        "Humanities"
+      ]
+    },
+    "brian.matthews": {
+      "name": "Brian Matthews",
+      "email": "brian.matthews@stfc.ac.uk",
+      "affiliation": "Science and Technology Facilities Council / UKRI",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "Data Infrastructure",
+        "Data Management",
+        "Scientific Data",
+        "Metadata"
+      ]
     },
     "carly.huitema": {
       "name": "Carly Huitema",
-      "affiliation": "University of Guelph",
       "email": "huitemac@uoguelph.ca",
-      "interests": [],
-      "expertise": []
-    },
-    "dan.bri": {
-      "name": "Dan Bri",
-      "affiliation": "Danbri",
-      "email": "danbri@danbri.org",
-      "interests": [],
-      "expertise": []
+      "affiliation": "University of Guelph",
+      "countryOfResidence": "Canada",
+      "areaOfExpertise": []
     },
     "darren.bell": {
       "name": "Darren Bell",
-      "affiliation": "University of Essex",
       "email": "dbell@essex.ac.uk",
-      "interests": [],
-      "expertise": []
+      "affiliation": "UK Data Service",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "Data Modelling",
+        "Metadata Schema Creation",
+        "RDF",
+        "ODRL"
+      ]
     },
-    "david.jensen": {
-      "name": "David Jensen",
-      "affiliation": "United Nations",
-      "email": "david.jensen@un.org",
-      "interests": [],
-      "expertise": []
+    "david.amadi": {
+      "name": "David Amadi",
+      "email": "david.amadi@lshtm.ac.uk",
+      "affiliation": "CODATA",
+      "countryOfResidence": "Kenya",
+      "areaOfExpertise": [
+        "RDM",
+        "FAIR Data",
+        "Metadata Standards",
+        "Semantic Interoperability"
+      ]
+    },
+    "david.linke": {
+      "name": "David Linke",
+      "email": "david.linke@catalysis.de",
+      "affiliation": "Leibniz-Institut for Catalysis",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": [
+        "Catalysis",
+        "Chemical Engineering",
+        "RDM"
+      ]
     },
     "deirdre.lungley": {
       "name": "Deirdre Lungley",
-      "affiliation": "University of Essex",
       "email": "dmlung@essex.ac.uk",
-      "interests": [],
-      "expertise": []
+      "affiliation": "UK Data Service",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "AI",
+        "Computational Linguistics",
+        "Social Science Infrastructure",
+        "SDC"
+      ]
     },
     "donald.hobern": {
       "name": "Donald Hobern",
-      "affiliation": "University of Adelaide",
-      "email": "donald.hobern@adelaide.edu.au, dhobern@gmail.com",
-      "interests": [],
-      "expertise": []
+      "email": "donald.hobern@adelaide.edu.au",
+      "affiliation": "Australian Plant Phenomics Network",
+      "countryOfResidence": "Australia",
+      "areaOfExpertise": [
+        "Data Standards",
+        "Data Management",
+        "Research Infrastructure",
+        "Biodiversity",
+        "Plant Phenomics"
+      ]
     },
-    "doug.fils": {
-      "name": "Doug Fils",
-      "affiliation": "Fils Network",
+    "dorothea.iglezakis": {
+      "name": "Dorothea Iglezakis",
+      "email": "dorothea.iglezakis@ub.uni-stuttgart.de",
+      "affiliation": "University of Stuttgart",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": [
+        "Research Data Management",
+        "Semantics",
+        "Metadata",
+        "Computer Science",
+        "Psychology"
+      ]
+    },
+    "douglas.fils": {
+      "name": "Douglas Fils",
       "email": "doug@fils.network",
-      "interests": [],
-      "expertise": []
+      "affiliation": "University of California San Diego; San Diego Supercomputer Center",
+      "countryOfResidence": "USA",
+      "areaOfExpertise": [
+        "FAIR",
+        "Semantics",
+        "AI/ML"
+      ]
     },
-    "elizabeth.lea.bishop": {
-      "name": "Elizabeth Lea Bishop",
-      "affiliation": "Icloud",
-      "email": "elizabeth.lea.bishop@icloud.com",
-      "interests": [],
-      "expertise": []
+    "felix.emeka.anyiam": {
+      "name": "Felix Emeka Anyiam",
+      "email": "felixemekaanyiam@gmail.com",
+      "affiliation": "University of Port Harcourt",
+      "countryOfResidence": "Nigeria",
+      "areaOfExpertise": [
+        "Public Health",
+        "Health Sciences",
+        "Biostatistics",
+        "Epidemiology",
+        "Research Ethics",
+        "Quantitative Research Methods"
+      ]
     },
     "flavio.rizzolo": {
       "name": "Flavio Rizzolo",
-      "affiliation": "StatCan",
       "email": "flavio.rizzolo@statcan.gc.ca",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Statistics Canada",
+      "countryOfResidence": "Canada",
+      "areaOfExpertise": [
+        "Data Architecture",
+        "Interoperability",
+        "Standards",
+        "Computer Science"
+      ]
     },
-    "g.bruce.berriman": {
-      "name": "G. Bruce Berriman",
-      "affiliation": "IPAC",
-      "email": "gbb@ipac.caltech.edu",
-      "interests": [],
-      "expertise": []
+    "franck.cotton": {
+      "name": "Franck Cotton",
+      "email": "franck@making-sense.info",
+      "affiliation": "Making Sense",
+      "countryOfResidence": "France",
+      "areaOfExpertise": ["Metadata Standards"]
     },
     "hea.lim.rhee": {
       "name": "Hea Lim Rhee",
-      "affiliation": "KISTI",
       "email": "rhee.healim@kisti.re.kr",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Korea Institute of Science and Technology Information",
+      "countryOfResidence": "Republic of Korea (South Korea)",
+      "areaOfExpertise": [
+        "Digital Curation",
+        "Research Data",
+        "Metadata",
+        "Archiving"
+      ]
     },
-    "heike.goerzig": {
-      "name": "Heike G\u00f6rzig",
-      "affiliation": "Helmholtz Berlin",
-      "email": "heike.goerzig@helmholtz-berlin.de",
-      "interests": [],
-      "expertise": []
+    "hector.perez.ponce": {
+      "name": "Hector Perez Ponce",
+      "email": "hector.perez_ponce@helmholtz-berlin.de",
+      "affiliation": "Helmholtz-Zentrum Berlin für Materialien und Energie",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": [Signal Processing and Automation]
     },
     "heinrich.widmann": {
       "name": "Heinrich Widmann",
-      "affiliation": "German Climate Computing Center",
       "email": "widmann@dkrz.de",
-      "interests": [],
-      "expertise": []
+      "affiliation": "German Climate Computing Center",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": [
+        "Climate Science",
+        "Semantic Interoperability"
+      ]
     },
-    "hilde.orten": {
-      "name": "Hilde Orten",
-      "affiliation": "Sikt",
-      "email": "hilde.orten@sikt.no",
-      "interests": [],
-      "expertise": []
+    "ian.bruno": {
+      "name": "Ian Bruno",
+      "email": "bruno@ccdc.cam.ac.uk",
+      "affiliation": "CCDC",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "Chemistry & Crystallography",
+        "Scientific Research Data"
+      ]
     },
-    "isabel.ceron": {
-      "name": "Isabel Ceron",
-      "affiliation": "University of Queensland",
-      "email": "isabel.ceron@uq.edu.au",
-      "interests": [],
-      "expertise": []
+    "ilona.trtikova": {
+      "name": "Ilona Trtíková",
+      "email": "ilona.trtikova@soc.cas.cz",
+      "affiliation": "Institute of Sociology / Czech Academy of Science",
+      "countryOfResidence": "Czech Republic",
+      "areaOfExpertise": [
+        "Sociology",
+        "Information Science"
+      ]
     },
     "iseult.lynch": {
       "name": "Iseult Lynch",
-      "affiliation": "University of Birmingham",
       "email": "i.lynch@bham.ac.uk",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Lynch",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "Environmental Chemistry",
+        "Nanomaterials",
+        "Toxicology/Ecotoxicology",
+        "FAIR Data"
+      ]
+    },
+    "ivana.ivanova": {
+      "name": "Ivana Ivanova",
+      "email": "ivana.ivanova@curtin.edu.au",
+      "affiliation": "Curtin University",
+      "countryOfResidence": "Australia",
+      "areaOfExpertise": [
+        "GIScience",
+        "Spatial Data Quality",
+        "Metadata",
+        "Interoperability Frameworks",
+        "Provenance",
+        "Automated Quality Assessment"
+      ]
+    },
+    "javier.cruz": {
+      "name": "Javier Cruz",
+      "email": "jcruzsm@gmail.com",
+      "affiliation": "DrumWave",
+      "countryOfResidence": "Brasil",
+      "areaOfExpertise": [
+        "Data Interoperability",
+        "Semantic Data Modelling",
+        "Metadata Standards",
+        "FAIR Data",
+        "Data Rights & Governance",
+        "AI-assisted Schema Mapping",
+        "Cross-Domain Data Integration"
+      ]
+    },
+    "jay.greenfield": {
+      "name": "Jay Greenfield",
+      "email": "jay@codata.org",
+      "affiliation": "CODATA",
+      "countryOfResidence": "USA",
+      "areaOfExpertise": ["AI Research Science"]
+    },
+    "jindrich.fejfar": {
+      "name": "Jindrich Fejfar",
+      "email": "fejfar@lib.cas.cz",
+      "affiliation": "Library of Czech Academy of Sciences",
+      "countryOfResidence": "Czech Republic",
+      "areaOfExpertise": []
     },
     "joachim.wackerow": {
       "name": "Joachim Wackerow",
-      "affiliation": "",
       "email": "joachim.wackerow@posteo.de",
-      "interests": [],
-      "expertise": [
-        "DDI"
-      ]
+      "affiliation": "Independent Expert",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": ["Metadata"]
     },
-    "kelsey.druken": {
-      "name": "Kelsey Druken",
-      "affiliation": "ANU",
-      "email": "kelsey.druken@anu.edu.au",
-      "interests": [],
-      "expertise": []
-    },
-    "laura.molloy": {
-      "name": "Laura Molloy",
-      "affiliation": "CODATA",
-      "email": "laura@example.org",
-      "interests": [
-        "Data Policy",
-        "Ethics"
-      ],
-      "expertise": [
-        "Project Management",
-        "Policy Analysis"
+    "karen.jacqueline.cloete": {
+      "name": "Karen Jacqueline Cloete",
+      "email": "kaboutercloete@gmail.com",
+      "affiliation": "University of South Africa; University of Nova Gorica",
+      "countryOfResidence": "South Africa",
+      "areaOfExpertise": [
+        "Environmental Nanoscience",
+        "Agro-nanotechnology",
+        "Circular Bioeconomy",
+        "Environmental Health",
+        "Science-policy Interfaces"
       ]
     },
     "lauren.maxwell": {
       "name": "Lauren Maxwell",
-      "affiliation": "Heidelberg University",
       "email": "lauren.maxwell@uni-heidelberg.de",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Universitätsklinikum Heidelberg; Ecraid Foundation",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": [
+        "Pandemic Preparedness",
+        "Data & Sample Interoperability",
+        "Data Reuse",
+        "Epidemiology",
+        "Data & Biomedical Ethics"
+      ]
+    },
+    "leandro.liborio": {
+      "name": "Leandro Liborio",
+      "email": "leandro.liborio@stfc.ac.uk",
+      "affiliation": "Science and Technology Facilities Council / UKRI",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "X-ray Absorption Spectroscopy",
+        "Muon Science",
+        "Material Science"
+      ]
     },
     "lesley.wyborn": {
       "name": "Lesley Wyborn",
-      "affiliation": "ANU",
       "email": "lesley.wyborn@anu.edu.au",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Australian National University",
+      "countryOfResidence": "Australia",
+      "areaOfExpertise": []
     },
-    "luis.gonzalez": {
-      "name": "Luis Gonzalez",
-      "affiliation": "United Nations",
-      "email": "gonzalezmorales@un.org",
-      "interests": [],
-      "expertise": []
+    "lisa.griffith": {
+      "name": "Lisa Griffith",
+      "email": "l.griffith@ria.ie",
+      "affiliation": "Digital Repository of Ireland",
+      "countryOfResidence": "Ireland",
+      "areaOfExpertise": ["Digital Preservation"]
     },
-    "mark.dietrich": {
-      "name": "Mark Dietrich",
-      "affiliation": "EGI",
-      "email": "mark.dietrich@egi.eu",
-      "interests": [],
-      "expertise": []
+    "marcin.wichorowski": {
+      "name": "Marcin Wichorowski",
+      "email": "wichor@iopan.pl",
+      "affiliation": "Institute of Oceanology Polish Academy of Sciences",
+      "countryOfResidence": "Poland",
+      "areaOfExpertise": [
+        "Data Management Systems",
+        "AI",
+        "Oceanography",
+        "Project Management"
+      ]
+    },
+    "mark.parsons": {
+      "name": "Mark Parsons",
+      "email": "parsonsm.work@icloud.com",
+      "affiliation": "AGU; National Snow and Ice Data Center",
+      "countryOfResidence": "USA",
+      "areaOfExpertise": [
+        "Data Management",
+        "Community Building"
+      ]
+    },
+    "martina.stockhause": {
+      "name": "Martina Stockhause",
+      "email": "stockhause@web.de",
+      "affiliation": "Institute of Physics of Cantabria / Spanish National Research Council",
+      "countryOfResidence": "Germany / Spain",
+      "areaOfExpertise": [
+        "High-volume Data",
+        "Climate Model Data",
+        "Traceability/Provenance",
+        "Complex Citation",
+        "Repository-publisher Workflows"
+      ]
+    },
+    "matti.heikkurinen": {
+      "name": "Matti Heikkurinen",
+      "email": "matti@codata.org",
+      "affiliation": "CODATA",
+      "countryOfResidence": "Switzerland",
+      "areaOfExpertise": [
+        "Large-scale IT Infrastructure Management",
+        "Policies"
+      ]
     },
     "megan.wong": {
       "name": "Megan Wong",
-      "affiliation": "ARDC",
       "email": "megan.wong@ardc.edu.au",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Australian Research Data Commons",
+      "countryOfResidence": "Australia",
+      "areaOfExpertise": [
+        "Soil and Environmental Information",
+        "FAIR Data",
+        "Community Building",
+        "Semantics",
+        "Semantic Service Project Management"
+      ]
     },
     "michelle.edwards": {
       "name": "Michelle Edwards",
-      "affiliation": "University of Guelph",
       "email": "edwardsm@uoguelph.ca",
-      "interests": [],
-      "expertise": []
+      "affiliation": "",
+      "countryOfResidence": "Canada",
+      "areaOfExpertise": [
+        "RDM",
+        "Data Analysis",
+        "Metadata"
+      ]
     },
-    "michelle.quirke": {
-      "name": "Michelle Quirke",
-      "affiliation": "Iu",
-      "email": "mvquirke@iu.edu",
-      "interests": [],
-      "expertise": []
+    "milan.ojstersek": {
+      "name": "Milan Ojstersek",
+      "email": "milan.ojstersek@um.si",
+      "affiliation": "University of Maribor",
+      "countryOfResidence": "Slovenia",
+      "areaOfExpertise": [
+        "Metadata",
+        "Interoperability"
+      ]
+    },
+    "natalie.meyers": {
+      "name": "Natalie Meyers",
+      "email": "natalie.meyers@nd.edu",
+      "affiliation": "SDSC",
+      "countryOfResidence": "USA",
+      "areaOfExpertise": [
+        "Informatics",
+        "AI/ML",
+        "FAIR & SW Preservation"
+      ]
+    },
+    "noemi.betancort": {
+      "name": "Noemi Betancort",
+      "email": "noemi.betancort@suub.uni-bremen.de",
+      "affiliation": "SuUB Bremen; RDC Qualiservice",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": [
+        "Qualitative Data",
+        "Metadata",
+        "Unstructured Data"
+      ]
     },
     "pascal.heus": {
       "name": "Pascal Heus",
-      "affiliation": "CODATA",
       "email": "pascal@codata.org",
-      "interests": [
-        "Data Harmonization",
-        "Software Development"
-      ],
-      "expertise": [
-        "DDI",
-        "Web Development"
+      "affiliation": "Freelance / CODATA",
+      "countryOfResidence": "Canada",
+      "areaOfExpertise": [
+        "Information Technology",
+        "Metadata",
+        "Data Science"
       ]
     },
-    "peter.winstanley": {
-      "name": "Peter Winstanley",
-      "affiliation": "Semantic Arts",
-      "email": "peter.winstanley@semanticarts.com",
-      "interests": [],
-      "expertise": []
-    },
     "pier.luigi.buttigieg": {
-      "name": "Pier-Luigi Buttigieg",
-      "affiliation": "AWI",
+      "name": "Pier Luigi Buttigieg",
       "email": "pier.buttigieg@awi.de",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Alfred Wegener Institute",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": [
+        "Semantics & Ontology",
+        "Data Architecture & Data Science",
+        "Digital Strategy",
+        "Linked Open Data",
+        "Biodiversity Informatics",
+        "Ocean Science & Marine Microbiology"
+      ]
     },
-    "rebecca.farrington": {
-      "name": "Rebecca Farrington",
-      "affiliation": "AuScope",
-      "email": "rebecca@auscope.org.au",
-      "interests": [],
-      "expertise": []
+    "pierre.antoine.champin": {
+      "name": "Pierre-Antoine Champin",
+      "email": "pierre-antoine.champin@liris.cnrs.fr",
+      "affiliation": "W3C; Inria",
+      "countryOfResidence": "France",
+      "areaOfExpertise": ["Semantic Web & Linked Data"]
+    },
+    "raymond.obuch": {
+      "name": "Raymond Obuch",
+      "email": "rcobuch@msn.com",
+      "affiliation": "USGS Emeritus Data Management",
+      "countryOfResidence": "USA",
+      "areaOfExpertise": ["Metadata"]
     },
     "richard.dennis": {
       "name": "Richard Dennis",
-      "affiliation": "Yahoo",
-      "email": "pacian@yahoo.com",
-      "interests": [],
-      "expertise": []
-    },
-    "richard.dennis1": {
-      "name": "Richard Dennis",
-      "affiliation": "University of Copenhagen",
       "email": "richard.dennis@sund.ku.dk",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Eindhoven University of Technology",
+      "countryOfResidence": "The Netherlands",
+      "areaOfExpertise": [
+        "AI",
+        "Big Data",
+        "Biomedical Engineering/Mechanical Engineering"
+      ]
     },
-    "rtleyb": {
-      "name": "rtleyb",
-      "affiliation": "Independent",
-      "email": "rtleyb@icloud.com, rtleyb@pm.me",
-      "interests": [],
-      "expertise": []
+    "rodrigo.roa": {
+      "name": "Rodrigo Roa",
+      "email": "rodrigoroa@gmail.com",
+      "affiliation": "Data Observatory",
+      "countryOfResidence": "Chile",
+      "areaOfExpertise": [
+        "Compliance",
+        "Ethics",
+        "Law",
+        "Management",
+        "Strategy"
+      ]
     },
-    "shawn.ross": {
-      "name": "Shawn Ross",
-      "affiliation": "ARDC",
-      "email": "shawn.ross@ardc.edu.au",
-      "interests": [],
-      "expertise": []
+    "sachin.pandey": {
+      "name": "Sachin Pandey",
+      "email": "sachinpandey1312@outlook.com",
+      "affiliation": "Oracle",
+      "countryOfResidence": "USA",
+      "areaOfExpertise": [
+        "AI",
+        "ML",
+        "Big Data",
+        "Analytics"
+      ]
     },
-    "simon.hodson": {
-      "name": "Simon Hodson",
-      "affiliation": "CODATA",
-      "email": "simon@codata.org",
-      "interests": [],
-      "expertise": []
+    "simon.cox": {
+      "name": "Simon Cox",
+      "email": "simon.j.d.cox@pm.me",
+      "affiliation": "Independent Expert",
+      "countryOfResidence": "Australia",
+      "areaOfExpertise": [
+        "Earth and Environmental Science",
+        "Information Engineering / Ontologies"
+      ]
     },
     "slava.tykhonov": {
       "name": "Slava Tykhonov",
-      "affiliation": "CODATA",
       "email": "slava@codata.org",
-      "interests": [],
-      "expertise": []
+      "affiliation": "CODATA",
+      "countryOfResidence": "France",
+      "areaOfExpertise": ["AI"]
     },
-    "steve.mceachern": {
-      "name": "Steve McEachern",
-      "affiliation": "UK Data Services",
-      "email": "steve@example.org",
-      "interests": [
-        "Social Science Data",
-        "DDI"
-      ],
-      "expertise": [
-        "Data Archives",
-        "Governance"
+    "stephen.richard": {
+      "name": "Stephen Richard",
+      "email": "smrtucson@gmail.com",
+      "affiliation": "CODATA",
+      "countryOfResidence": "USA",
+      "areaOfExpertise": [
+        "Geoscience",
+        "Spatial Data",
+        "Metadata",
+        "Catalog Systems"
       ]
     },
-    "steve.richard": {
-      "name": "Steve Richard",
-      "affiliation": "Freelance",
-      "email": "smrtucson@gmail.com",
-      "interests": [],
-      "expertise": []
+    "steven.mceachern": {
+      "name": "Steven McEachern",
+      "email": "sm24412@essex.ac.uk",
+      "affiliation": "University of Essex",
+      "countryOfResidence": "United Kingdom",
+      "areaOfExpertise": [
+        "Social Science",
+        "Data Infrastructure"
+      ]
     },
     "stuart.chalk": {
       "name": "Stuart Chalk",
-      "affiliation": "University of North Florida",
       "email": "schalk@unf.edu",
-      "interests": [],
-      "expertise": []
+      "affiliation": "University of North Florida",
+      "countryOfResidence": "USA",
+      "areaOfExpertise": [
+        "Chemical Informatics",
+        "Data Modelling",
+        "Knowledge Graphs",
+        "Ontology Development"
+      ]
+    },
+    "sukhdeep.kaur": {
+      "name": "Sukhdeep Kaur",
+      "email": "sc_officer@pu.ac.in",
+      "affiliation": "Panjab University",
+      "countryOfResidence": "India",
+      "areaOfExpertise": [
+        "Disaster Risk Management",
+        "AI Governance",
+        "STI Policy Research"
+      ]
+    },
+    "thomas.baker": {
+      "name": "Thomas Baker",
+      "email": "tbaker@tombaker.org",
+      "affiliation": "DCMI",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": ["Metadata"]
     },
     "thomas.exner": {
       "name": "Thomas Exner",
-      "affiliation": "Seven Past Nine",
       "email": "thomas.exner@sevenpastnine.com",
-      "interests": [],
-      "expertise": []
-    },
-    "hector.ponce":{
-    "name": "Hector Perez Ponce",
-      "affiliation": "Helmholtz Association",
-      "email": "hector.perez_ponce@helmholtz-berlin.de",
-      "interests": [],
-      "expertise": []
+      "affiliation": "Seven Past Nine",
+      "countryOfResidence": "Germany",
+      "areaOfExpertise": [
+        "Data Management",
+        "FAIRification",
+        "Safe-and-Sustainable-by-Design"
+      ]
     },
     "yann.le.franc": {
       "name": "Yann Le Franc",
-      "affiliation": "EScience Factory",
       "email": "ylefranc@esciencefactory.com",
-      "interests": [],
-      "expertise": []
+      "affiliation": "e-Science Data Factory",
+      "countryOfResidence": "France",
+      "areaOfExpertise": [
+        "Research Data Management",
+        "Semantics",
+        "AI/ML"
+      ]
     }
   }
 }
