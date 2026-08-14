@@ -1,48 +1,40 @@
 {
   "workingGroups": [
     {
-      "id": "provenance",
-      "name": "Provenance",
-      "description": "to be determined",
+      "id": "CDIFWG",
+      "name": "Full Working Group",
+      "description": "The Full Working Group provides overall strategic direction and oversight for the CDIF framework and its evolution.",
       "topics": [
-        "to be determined"
+        "Strategy",
+        "Governance",
+        "Strategic Partnerships",
+        "Resource Allocation"
       ],
-      "frequency": "to be determined",
+      "frequency": "Monthly",
       "chair": [],
       "cochair": [],
       "secretary": [],
       "member": [
-        "matti.heikkurinen",
-        "dorothea.iglezakis",
-        "thomas.exner",
-        "lesley.wyborn",
-        "simon.cox",
-        "jay.greenfield",
-        "raymond.obuch",
-        "donald.hobern",
-        "lisa.griffith",
         "alexandra.kokkinaki",
-        "sachin.pandey",
+        "darren.bell", 
+        "donald.hobern", 
+        "deirdre.lungley", 
+        "doug.fils", 
+        "michelle.edwards",
         "flavio.rizzolo",
-        "franck.cotton",
-        "alina.mierlus",
-        "martina.stockhause",
-        "ivana.ivanova",
-        "douglas.fils",
-        "lauren.maxwell",
-        "javier.cruz",
-        "stephen.richard",
-        "abraham.nieva.de.la.hidalga",
-        "yann.le.franc",
-        "milan.ojstersek",
-        "marcin.wichorowski",
-        "slava.tykhonov",
-        "leandro.liborio",
-        "pier.luigi.buttigieg",
-        "megan.wong",
-        "david.linke",
+        "hector.perez.ponce",
         "carly.huitema",
-        "iseult.lynch"
+        "iseult.lynch",
+        "lauren.maxwell", 
+        "lesley.wyborn",
+        "megan.wong",
+        "richard.dennis", 
+        "pascal.heus", 
+        "pier.luigi.buttigieg", 
+        "hea.lim.rhee",
+        "stephen.richard", 
+        "thomas.exner", 
+        "yann.le.franc"
       ]
     },
     {
@@ -97,39 +89,6 @@
       ]
     },
     {
-      "id": "mapping",
-      "name": "Mapping",
-      "description": "to be determined",
-      "topics": [
-        "to be determined"
-      ],
-      "frequency": "to be determined",
-      "chair": [],
-      "cochair": [],
-      "secretary": [],
-      "member": [
-        "deirdre.lungley",
-        "richard.dennis",
-        "flavio.rizzolo",
-        "hea.lim.rhee",
-        "stuart.chalk",
-        "alvaro.paredes.l",
-        "sukhdeep.kaur",
-        "noemi.betancort",
-        "douglas.fils",
-        "javier.cruz",
-        "abraham.nieva.de.la.hidalga",
-        "pierre.antoine.champin",
-        "yann.le.franc",
-        "milan.ojstersek",
-        "marcin.wichorowski",
-        "slava.tykhonov",
-        "pier.luigi.buttigieg",
-        "david.amadi",
-        "jindrich.fejfar"
-      ]
-    },
-    {
       "id": "context",
       "name": "Context",
       "description": "to be determined",
@@ -172,8 +131,41 @@
       ]
     },
     {
-      "id": "software",
-      "name": "Software",
+      "id": "mapping",
+      "name": "Mapping",
+      "description": "to be determined",
+      "topics": [
+        "to be determined"
+      ],
+      "frequency": "to be determined",
+      "chair": [],
+      "cochair": [],
+      "secretary": [],
+      "member": [
+        "deirdre.lungley",
+        "richard.dennis",
+        "flavio.rizzolo",
+        "hea.lim.rhee",
+        "stuart.chalk",
+        "alvaro.paredes.l",
+        "sukhdeep.kaur",
+        "noemi.betancort",
+        "douglas.fils",
+        "javier.cruz",
+        "abraham.nieva.de.la.hidalga",
+        "pierre.antoine.champin",
+        "yann.le.franc",
+        "milan.ojstersek",
+        "marcin.wichorowski",
+        "slava.tykhonov",
+        "pier.luigi.buttigieg",
+        "david.amadi",
+        "jindrich.fejfar"
+      ]
+    },
+    {
+      "id": "provenance",
+      "name": "Provenance",
       "description": "to be determined",
       "topics": [
         "to be determined"
@@ -184,18 +176,36 @@
       "secretary": [],
       "member": [
         "matti.heikkurinen",
-        "pascal.heus",
-        "deirdre.lungley",
-        "richard.dennis",
+        "dorothea.iglezakis",
+        "thomas.exner",
+        "lesley.wyborn",
+        "simon.cox",
+        "jay.greenfield",
+        "raymond.obuch",
+        "donald.hobern",
+        "lisa.griffith",
+        "alexandra.kokkinaki",
         "sachin.pandey",
-        "stuart.chalk",
-        "natalie.meyers",
+        "flavio.rizzolo",
+        "franck.cotton",
+        "alina.mierlus",
+        "martina.stockhause",
+        "ivana.ivanova",
+        "douglas.fils",
+        "lauren.maxwell",
+        "javier.cruz",
+        "stephen.richard",
         "abraham.nieva.de.la.hidalga",
+        "yann.le.franc",
         "milan.ojstersek",
         "marcin.wichorowski",
         "slava.tykhonov",
         "leandro.liborio",
-        "hector.perez.ponce"
+        "pier.luigi.buttigieg",
+        "megan.wong",
+        "david.linke",
+        "carly.huitema",
+        "iseult.lynch"
       ]
     },
     {
@@ -228,6 +238,33 @@
         "iseult.lynch",
         "rodrigo.roa",
         "ilona.trtikova"
+      ]
+    },
+    {
+      "id": "software",
+      "name": "Software",
+      "description": "to be determined",
+      "topics": [
+        "to be determined"
+      ],
+      "frequency": "to be determined",
+      "chair": [],
+      "cochair": [],
+      "secretary": [],
+      "member": [
+        "matti.heikkurinen",
+        "pascal.heus",
+        "deirdre.lungley",
+        "richard.dennis",
+        "sachin.pandey",
+        "stuart.chalk",
+        "natalie.meyers",
+        "abraham.nieva.de.la.hidalga",
+        "milan.ojstersek",
+        "marcin.wichorowski",
+        "slava.tykhonov",
+        "leandro.liborio",
+        "hector.perez.ponce"
       ]
     }
   ],
@@ -472,7 +509,7 @@
     "ilona.trtikova": {
       "name": "Ilona Trtíková",
       "email": "ilona.trtikova@soc.cas.cz",
-      "affiliation": "Institute of Sociology / Czech Academy of Sciences",
+      "affiliation": "Institute of Sociology / Czech Academy of Science",
       "countryOfResidence": "Czech Republic",
       "areaOfExpertise": [
         "Sociology",
